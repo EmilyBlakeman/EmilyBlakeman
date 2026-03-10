@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Emily Blakeman — UX Designer</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="cur"></div>
+<div id="cur-aura"></div>
+
+<nav>
+  <a class="nav-logo" href="#" onclick="showPage('home');return false;">Emily Blakeman</a>
+  <ul class="nav-links">
+    <li><a href="#" onclick="showPage('home');return false;" data-page="home" class="active">Home</a></li>
+    <li><a href="#" onclick="showPage('about');return false;" data-page="about">About</a></li>
+    <li><a href="#" onclick="showPage('resume');return false;" data-page="resume">Resume</a></li>
+    <li><a href="#" onclick="showPage('contact');return false;" data-page="contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ════ HOME ════ -->
+<div class="page active" id="page-home">
+  <div class="home-hero-outer">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="home-hero">
+      <div class="hero-text">
+        <div class="hero-tag reveal">Seattle, WA</div>
+        <h1 class="hero-headline reveal reveal-delay-1">
+          <span class="hl-line">Hi, I'm Emily.</span>
+          <span class="hl-line">I design <span class="grad-word">human</span></span>
+          <span class="hl-line">experiences.</span>
+        </h1>
+        <p class="hero-sub reveal reveal-delay-2">Seattle-based UX designer turning complexity into clarity through logic, empathy, and storytelling — crafting digital experiences that feel effortless and genuinely human.</p>
+        <div class="hero-ctas reveal reveal-delay-3">
+          <a class="btn btn-grad" href="#" onclick="document.getElementById('home-work').scrollIntoView({behavior:'smooth'});return false;">View My Work</a>
+          <a class="btn btn-ghost" href="#" onclick="showPage('contact');return false;">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="fact-grid reveal reveal-delay-2">
+      <div class="fact-wrap fact-wrap-1"><div class="fact-card">
+        <div class="fact-icon">📍</div>
+        <div class="fact-text"><div class="fact-title">Seattle, WA</div><div class="fact-sub">Pacific Northwest</div></div>
+      </div></div>
+      <div class="fact-wrap fact-wrap-2"><div class="fact-card">
+        <div class="fact-icon">🎓</div>
+        <div class="fact-text"><div class="fact-title">UW Informatics</div><div class="fact-sub">HCI · Entrepreneurship</div></div>
+      </div></div>
+      <div class="fact-wrap fact-wrap-3"><div class="fact-card">
+        <div class="fact-icon">🌏</div>
+        <div class="fact-text"><div class="fact-title">Bilingual</div><div class="fact-sub">English + Mandarin</div></div>
+      </div></div>
+      <div class="fact-wrap fact-wrap-4"><div class="fact-card">
+        <div class="fact-icon">✏️</div>
+        <div class="fact-text"><div class="fact-title">Human-Centered</div><div class="fact-sub">Research-driven design</div></div>
+      </div></div>
+      <div class="fact-wrap fact-wrap-5"><div class="fact-card">
+        <div class="fact-icon">🚀</div>
+        <div class="fact-text"><div class="fact-title">Co-Founder</div><div class="fact-sub">Building Inflerra</div></div>
+      </div></div>
+    </div>
+
+  </div>
+  <div class="home-stats-wrap reveal">
+    <div class="home-stats">
+      <div class="stat-item"><div class="stat-num">4+</div><div class="stat-label">Years of experience</div></div>
+      <div class="stat-item"><div class="stat-num">0→1</div><div class="stat-label">Co-founded a startup</div></div>
+      <div class="stat-item"><div class="stat-num">4</div><div class="stat-label">Industries designed for</div></div>
+      <div class="stat-item"><div class="stat-num">5</div><div class="stat-label">Products shipped end-to-end</div></div>
+      <div class="stat-item"><div class="stat-num">2</div><div class="stat-label">Languages spoken</div></div>
+    </div>
+  </div>
+
+  <div id="home-work" class="home-work-section">
+    <div class="home-work-header reveal">
+      <div class="section-eyebrow">Selected Work</div>
+      <h2 class="section-title">Projects that move people.</h2>
+    </div>
+
+    <div class="section-eyebrow reveal" style="margin-bottom: 16px;">My design process</div>
+    <div class="process-strip reveal">
+      <div class="process-card">
+        <div class="process-icon">🔍</div>
+        <div class="process-step-num">01</div>
+        <div class="process-title">Research & Discover</div>
+        <p class="process-desc">User interviews, competitor analysis, and workflow mapping to understand the real problem before touching a pixel.</p>
+      </div>
+      <div class="process-card">
+        <div class="process-icon">💡</div>
+        <div class="process-step-num">02</div>
+        <div class="process-title">Define & Ideate</div>
+        <p class="process-desc">Synthesize findings into clear problem statements, then explore a wide solution space before narrowing in.</p>
+      </div>
+      <div class="process-card">
+        <div class="process-icon">✦</div>
+        <div class="process-step-num">03</div>
+        <div class="process-title">Design & Test</div>
+        <p class="process-desc">From lo-fi wireframes to hi-fi prototypes — tested iteratively until the solution feels obvious in hindsight.</p>
+      </div>
+      <div class="process-card">
+        <div class="process-icon">🚀</div>
+        <div class="process-step-num">04</div>
+        <div class="process-title">Ship & Iterate</div>
+        <p class="process-desc">Collaborate closely with engineering through launch, then monitor outcomes and refine based on real feedback.</p>
+      </div>
+    </div>
+
+    <div class="hpc" onclick="showCS('genemod')">
+      <div class="hpc-image" style="background:#d6e6f5">
+        <img class="hpc-img-photo" src="Genemod.png" alt="Genemod screenshot">
+      </div>
+      <div class="hpc-body">
+        <div class="hpc-tags"><span class="work-tag">SaaS</span><span class="work-tag">Desktop</span><span class="work-tag">Tablet</span></div>
+        <h3 class="hpc-title">Genemod</h3>
+        <p class="hpc-desc">Led design for a LIMS SaaS platform used by 150+ biotech labs — from inventory and freezer management to analytics dashboards supporting 1M+ R&D activities.</p>
+        <div class="hpc-stats">
+          <div class="hpc-stat"><span class="hpc-stat-n">150+</span><span class="hpc-stat-l">Labs</span></div>
+          <div class="hpc-stat"><span class="hpc-stat-n">1M+</span><span class="hpc-stat-l">R&D activities</span></div>
+          <div class="hpc-stat"><span class="hpc-stat-n">798K</span><span class="hpc-stat-l">Impressions/mo</span></div>
+        </div>
+        <div class="hpc-cta">View Case Study <span class="hpc-arrow">→</span></div>
+      </div>
+    </div>
+
+    <div class="hpc" onclick="showCS('inflerra')">
+      <div class="hpc-image" style="background:#1a1428">
+        <img class="hpc-img-photo" src="Inflerra.png" alt="Inflerra screenshot">
+      </div>
+      <div class="hpc-body">
+        <div class="hpc-tags"><span class="work-tag">AI</span><span class="work-tag">Mobile</span><span class="work-tag">Desktop</span></div>
+        <h3 class="hpc-title">Inflerra</h3>
+        <p class="hpc-desc">Co-founded and led end-to-end UX/UI for an AI-powered influencer-brand matchmaking platform — built from zero, from brand identity to full product flows.</p>
+        <div class="hpc-tags" style="margin-top:10px"><span class="cs-chip">0→1 Product</span><span class="cs-chip">Design Systems</span><span class="cs-chip">AI UX</span></div>
+        <div class="hpc-cta">View Case Study <span class="hpc-arrow">→</span></div>
+      </div>
+    </div>
+
+    <div class="hpc" onclick="showCS('aroundtown')">
+      <div class="hpc-image" style="background:#d8e4ef">
+        <img class="hpc-img-photo" src="AroundTown.png" alt="Around Town screenshot">
+      </div>
+      <div class="hpc-body">
+        <div class="hpc-tags"><span class="work-tag">Mobile</span><span class="work-tag">UX Research</span><span class="work-tag">Civic</span></div>
+        <h3 class="hpc-title">Around Town</h3>
+        <p class="hpc-desc">A community-driven mobile app helping small locally-owned businesses survive Covid-19 through promotions, reviews, and social discovery.</p>
+        <div class="hpc-cta">View Case Study <span class="hpc-arrow">→</span></div>
+      </div>
+    </div>
+
+    <div class="hpc" onclick="showCS('alumnify')">
+      <div class="hpc-image" style="background:#f5ede0">
+        <img class="hpc-img-photo" src="Alumnify.png" alt="Alumnify screenshot">
+      </div>
+      <div class="hpc-body">
+        <div class="hpc-tags"><span class="work-tag">Web Design</span><span class="work-tag">SaaS</span><span class="work-tag">Research</span></div>
+        <h3 class="hpc-title">Alumnify</h3>
+        <p class="hpc-desc">A web application connecting alumni and students through mutual interests — enabling mentorship, networking, and career development across university communities.</p>
+        <div class="hpc-cta">View Case Study <span class="hpc-arrow">→</span></div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ════ ABOUT ════ -->
+<div class="page" id="page-about">
+  <div class="about-wrap">
+    <h2 class="about-hero-line reveal">Designing with <span class="chip">heart</span>,<br>shipping with precision.</h2>
+    <div class="about-grid">
+      <div>
+        <p class="about-body reveal">I'm a Seattle-based UX/UI designer with a BS in Informatics (Human-Computer Interaction) from the <strong>University of Washington</strong>. The best design is nearly invisible — it just makes life feel clearer and more delightful.</p>
+        <p class="about-body reveal reveal-delay-1">I've designed at scale — for <strong>biotech labs across the U.S. and Europe</strong>, for a city-funded civic education initiative, and now as <strong>Co-Founder & Head of Design at Inflerra</strong>, an AI-powered influencer-brand platform I'm building from scratch.</p>
+        <p class="about-body reveal reveal-delay-2">My approach is human-centered and research-grounded. I don't guess at what users need — I talk to them, test with them, and iterate until the solution feels obvious in hindsight.</p>
+        <div class="skill-group reveal reveal-delay-3">
+          <div class="skill-group-label">Design</div>
+          <div class="skill-pills">
+            <span class="pill pill-violet">UX / UI Design</span><span class="pill pill-violet">Interaction Design</span><span class="pill pill-violet">Visual Design</span><span class="pill pill-violet">Design Systems</span><span class="pill pill-violet">Accessible Design</span><span class="pill pill-violet">Prototyping</span>
+          </div>
+          <div class="skill-group-label">Research</div>
+          <div class="skill-pills">
+            <span class="pill pill-coral">User Interviews</span><span class="pill pill-coral">Usability Testing</span><span class="pill pill-coral">Journey Mapping</span><span class="pill pill-coral">A/B Testing</span><span class="pill pill-coral">Competitor Analysis</span>
+          </div>
+          <div class="skill-group-label">Tools</div>
+          <div class="skill-pills">
+            <span class="pill pill-mint">Figma</span><span class="pill pill-mint">Sketch</span><span class="pill pill-mint">Miro</span><span class="pill pill-mint">Photoshop</span><span class="pill pill-mint">Illustrator</span><span class="pill pill-mint">AfterEffects</span><span class="pill pill-mint">Procreate</span><span class="pill pill-mint">HTML/CSS</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="about-card reveal">
+          <div class="about-card-title"><div class="icon">✨</div>A little about me</div>
+          <div class="fact-row"><div class="fact-em">📍</div><div>Located in Seattle, Washington</div></div>
+          <div class="fact-row"><div class="fact-em">💛💜</div><div>Bilingual first-generation UW graduate</div></div>
+          <div class="fact-row"><div class="fact-em">💻</div><div>BS in Informatics, HCI</div></div>
+          <div class="fact-row"><div class="fact-em">📲</div><div>Minor in Entrepreneurship</div></div>
+          <div class="fact-row"><div class="fact-em">🌏</div><div>Fluent in Mandarin Chinese</div></div>
+          <div class="fact-row"><div class="fact-em">🚀</div><div>Actively exploring Figma AI, Cursor & Claude</div></div>
+        </div>
+        <div class="honors-card reveal reveal-delay-1">
+          <div class="honors-card-title">🏆 Honors & Awards</div>
+          <div class="honor-row">WA State Opportunity Scholar</div>
+          <div class="honor-row">Vancouver Rotary Scholar</div>
+          <div class="honor-row">Senior Citizenship Award</div>
+          <div class="honor-row">BS Informatics, UW · Dec 2023</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ════ PORTFOLIO ════ -->
+<div class="page" id="page-portfolio">
+  <div class="portfolio-wrap">
+    <div class="section-eyebrow reveal">Selected Work</div>
+    <h2 class="section-title reveal reveal-delay-1">Projects that move people.</h2>
+    <p class="section-sub reveal reveal-delay-2">SaaS · AI · Civic Tech · Mobile Design</p>
+    <div class="filter-row reveal reveal-delay-3">
+      <button class="filt active" onclick="filterWork('all',this)">All</button>
+      <button class="filt" onclick="filterWork('saas',this)">SaaS</button>
+      <button class="filt" onclick="filterWork('mobile',this)">Mobile</button>
+      <button class="filt" onclick="filterWork('ai',this)">AI</button>
+      <button class="filt" onclick="filterWork('civic',this)">Civic</button>
+    </div>
+    <div class="work-grid">
+      <div class="work-card reveal" data-cat="saas">
+        <div class="work-thumb" style="background:linear-gradient(135deg,#e8f5e9,#b2dfdb)"><div class="work-thumb-inner">🧬</div><div class="work-thumb-overlay"></div></div>
+        <div class="work-body">
+          <div class="work-tags"><span class="work-tag">SaaS</span><span class="work-tag">Desktop</span><span class="work-tag">Tablet</span></div>
+          <div class="work-title">Genemod</div>
+          <p class="work-desc">Led design for a LIMS SaaS platform used by 150+ biotech labs. Designed notebooks, inventory, and freezer management supporting 1M+ R&D activities.</p>
+          <button class="work-cta" onclick="showCS('genemod')">View Case Study <span class="work-cta-arrow">→</span></button>
+        </div>
+      </div>
+      <div class="work-card reveal reveal-delay-1" data-cat="ai mobile">
+        <div class="work-thumb" style="background:linear-gradient(135deg,#fce4ec,#e1bee7)"><div class="work-thumb-inner">✨</div><div class="work-thumb-overlay"></div></div>
+        <div class="work-body">
+          <div class="work-tags"><span class="work-tag">AI</span><span class="work-tag">Mobile</span><span class="work-tag">Desktop</span></div>
+          <div class="work-title">Inflerra</div>
+          <p class="work-desc">Co-founded and led end-to-end UX/UI for an AI-powered influencer-brand matchmaking platform — built from zero, brand to product.</p>
+          <button class="work-cta" onclick="showCS('inflerra')">View Case Study <span class="work-cta-arrow">→</span></button>
+        </div>
+      </div>
+      <div class="work-card reveal reveal-delay-2" data-cat="mobile civic">
+        <div class="work-thumb" style="background:linear-gradient(135deg,#fff8e1,#ffecb3)"><div class="work-thumb-inner">🏘️</div><div class="work-thumb-overlay"></div></div>
+        <div class="work-body">
+          <div class="work-tags"><span class="work-tag">Mobile</span><span class="work-tag">UX Research</span></div>
+          <div class="work-title">Around Town</div>
+          <p class="work-desc">A mobile app helping small locally-owned businesses survive Covid-19, connecting communities through search, promotions, and social discovery.</p>
+          <button class="work-cta" onclick="showCS('aroundtown')">View Case Study <span class="work-cta-arrow">→</span></button>
+        </div>
+      </div>
+      <div class="work-card reveal reveal-delay-3" data-cat="saas">
+        <div class="work-thumb" style="background:linear-gradient(135deg,#ede7f6,#d1c4e9)"><div class="work-thumb-inner">🎓</div><div class="work-thumb-overlay"></div></div>
+        <div class="work-body">
+          <div class="work-tags"><span class="work-tag">Web Design</span><span class="work-tag">SaaS</span></div>
+          <div class="work-title">Alumnify</div>
+          <p class="work-desc">A web application connecting alumni and students through mutual interests — enabling mentorship, networking, and career development.</p>
+          <button class="work-cta" onclick="showCS('alumnify')">View Case Study <span class="work-cta-arrow">→</span></button>
+        </div>
+      </div>
+      <div class="work-card reveal" data-cat="civic">
+        <div class="work-thumb" style="background:linear-gradient(135deg,#e3f2fd,#bbdefb)"><div class="work-thumb-inner">🏛️</div><div class="work-thumb-overlay"></div></div>
+        <div class="work-body">
+          <div class="work-tags"><span class="work-tag">Civic Tech</span><span class="work-tag">Physical-Digital</span></div>
+          <div class="work-title">City of Seattle</div>
+          <p class="work-desc">Designed a hybrid physical-digital board game teaching civic budgeting to families — part of a $3M city-funded education initiative.</p>
+          <button class="work-cta" onclick="return false">Coming Soon</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ════ CASE STUDY: GENEMOD ════ -->
+<div class="case-study" id="cs-genemod">
+  <div class="cs-band" style="background:linear-gradient(135deg,#f0fdf4,#ecfdf5)">
+    <button class="cs-back" onclick="showPage('home')">← Back to Work</button>
+    <div style="margin-top:28px">
+      <div class="cs-kicker" style="color:#059669">
+        <span style="width:20px;height:1.5px;background:linear-gradient(90deg,#059669,#00c9a7);display:inline-block"></span>
+        SaaS · Desktop · Tablet · Science
+      </div>
+      <h1 class="cs-h1">Genemod</h1>
+      <p class="cs-sub">Simplifying Laboratory Management through Intuitive Design — used by 150+ biotech and academic labs across the U.S. and Europe.</p>
+      <div class="cs-meta-row">
+        <div class="cs-meta-pill"><div class="cs-meta-pill-label" style="color:#059669">Role</div><div class="cs-meta-pill-value">UX/UI Designer II</div></div>
+        <div class="cs-meta-pill"><div class="cs-meta-pill-label" style="color:#059669">Timeline</div><div class="cs-meta-pill-value">Dec 2023 – Dec 2025</div></div>
+        <div class="cs-meta-pill"><div class="cs-meta-pill-label" style="color:#059669">Tools</div><div class="cs-meta-pill-value">Figma · Miro · Jira · Adobe Suite</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="cs-hero-placeholder" style="background:linear-gradient(135deg,#e8f5e9,#b2dfdb)">🧬</div>
+  <div class="cs-body">
+    <div class="cs-section reveal">
+      <div class="cs-section-num">01</div>
+      <div class="cs-section-title">Overview</div>
+      <p class="cs-p">As UX/UI Designer at Genemod, I led design across a scientific information management platform spanning web, mobile, and tablet. In a fast-paced startup, I wore multiple hats — from research and product design to light project management — collaborating directly with scientists.</p>
+      <div class="cs-stats">
+        <div class="cs-stat-box"><div class="n">150+</div><div class="l">Labs on the platform</div></div>
+        <div class="cs-stat-box"><div class="n">1M+</div><div class="l">R&D activities</div></div>
+        <div class="cs-stat-box"><div class="n">798K</div><div class="l">Impressions / month</div></div>
+      </div>
+    </div>
+    <div class="cs-section reveal">
+      <div class="cs-section-num">02</div>
+      <div class="cs-section-title">The Challenge</div>
+      <p class="cs-p">As Genemod expanded, my work spanned both <strong>proactive feature design</strong> and <strong>ongoing UX optimization</strong> — balancing new features with customer-reported tickets to deliver rapid value while maintaining visual consistency at scale.</p>
+      <ul class="cs-ul">
+        <li>Difficulty navigating between modules (Freezer, ELN, Orders, etc.)</li>
+        <li>Gaps in workflows — missing analytics or sample traceability</li>
+        <li>Outdated or inconsistent UI patterns across web and mobile</li>
+      </ul>
+    </div>
+    <div class="cs-section reveal">
+      <div class="cs-section-num">03</div>
+      <div class="cs-section-title">Research Process</div>
+      <div class="cs-step">
+        <div class="cs-step-num">1</div>
+        <div class="cs-step-content"><h4>Customer Reported Tickets</h4><p>I categorized tickets by theme, prioritized by workflow impact, and converted findings into scoped UX improvements. A high-impact ticket is one that blocks a core workflow.</p></div>
+      </div>
+      <div class="cs-step">
+        <div class="cs-step-num">2</div>
+        <div class="cs-step-content"><h4>User Interviews</h4><p>For major features, I coordinated interviews with scientists and lab managers. Before the Analytics Dashboard, interviews revealed that lab managers were using external spreadsheets for tracking — directly validating the need for built-in tools.</p></div>
+      </div>
+      <div class="cs-quote">"I just want to track my team's order finances without exporting my data from Genemod into Excel." — Genemod user</div>
+      <div class="cs-step">
+        <div class="cs-step-num">3</div>
+        <div class="cs-step-content"><h4>Internal Testing & Validation</h4><p>I performed QA testing on new features and completed tickets — verifying flows, identifying inconsistencies, and revalidating resolved tickets to prevent regressions.</p></div>
+      </div>
+      <div class="cs-step">
+        <div class="cs-step-num">4</div>
+        <div class="cs-step-content"><h4>Workflow Mapping</h4><p>I created detailed maps across all core modules — Freezers, Consumables, Notebook, Orders, Protocols — visualizing each journey step to identify cross-module pain points.</p></div>
+      </div>
+    </div>
+    <div class="cs-section reveal">
+      <div class="cs-section-num">04</div>
+      <div class="cs-section-title">Design Work</div>
+      <div class="cs-h4">Analytics Dashboard</div>
+      <p class="cs-p">Gave lab managers a visual overview of sample usage, freezer capacity, and consumable stock — actionable insights at a glance, without leaving the platform.</p>
+      <ul class="cs-ul">
+        <li>High-level view of lab activity across all modules</li>
+        <li>Lab managers can track usage trends and freezer capacity</li>
+        <li>Modular data cards designed for future scalability</li>
+      </ul>
+      <div class="cs-h4">Barcode UI Redesign</div>
+      <p class="cs-p">Redesigned to support more label size options, printer resolution control, custom Barcode IDs, and flexible label content.</p>
+      <div class="cs-h4">Move Rack & Category Feature</div>
+      <p class="cs-p">Eliminated the need for duplicate setup steps — enabling effortless cross-freezer reorganization for evolving lab layouts.</p>
+      <div class="cs-h4">Freezer Item Color Coding</div>
+      <p class="cs-p">Introduced color-coded indicators for sample statuses, reducing time spent locating specific samples across large datasets.</p>
+    </div>
+    <div class="cs-section reveal">
+      <div class="cs-section-num">05</div>
+      <div class="cs-section-title">Results & Reflection</div>
+      <ul class="cs-ul">
+        <li>Reduced post-release bugs through improved internal QA</li>
+        <li>Positive enterprise feedback citing improved clarity and consistency</li>
+        <li>Faster adoption for new modules like Analytics</li>
+        <li>Stronger design–engineering collaboration via structured systems</li>
+      </ul>
+      <p class="cs-p">Working at Genemod taught me that <em>great design isn't just about visual polish — it's about balance</em>. Balancing feature innovation with ongoing improvements deepened my ability to prioritize, empathize, and design for scalability.</p>
+    </div>
+  </div>
+  <div class="cs-other">
+    <h3>More Projects</h3>
+    <div class="cs-other-grid">
+      <div class="cs-other-card" onclick="showCS('inflerra')"><div class="cs-other-thumb" style="background:linear-gradient(135deg,#fce4ec,#e1bee7)">✨</div><div class="cs-other-info"><strong>Inflerra</strong><span>AI · Mobile</span></div></div>
+      <div class="cs-other-card" onclick="showCS('aroundtown')"><div class="cs-other-thumb" style="background:linear-gradient(135deg,#fff8e1,#ffecb3)">🏘️</div><div class="cs-other-info"><strong>Around Town</strong><span>Mobile · Research</span></div></div>
+      <div class="cs-other-card" onclick="showCS('alumnify')"><div class="cs-other-thumb" style="background:linear-gradient(135deg,#ede7f6,#d1c4e9)">🎓</div><div class="cs-other-info"><strong>Alumnify</strong><span>Web · SaaS</span></div></div>
+    </div>
+  </div>
+  <div class="cs-nav-bar">
+    <div></div>
+    <button class="cs-nav-btn" onclick="showCS('inflerra')"><span>Next Project</span><span>Inflerra →</span></button>
+  </div>
+</div>
+
+<!-- ════ CASE STUDY: INFLERRA ════ -->
+<div class="case-study" id="cs-inflerra">
+  <div class="cs-band" style="background:linear-gradient(135deg,#fdf4ff,#fce4ec)">
+    <button class="cs-back" onclick="showPage('home')">← Back to Work</button>
+    <div style="margin-top:28px">
+      <div class="cs-kicker" style="color:#c2185b">
+        <span style="width:20px;height:1.5px;background:linear-gradient(90deg,#6c63ff,#f7567c);display:inline-block"></span>
+        AI · Mobile · Desktop · Co-Founder
+      </div>
+      <h1 class="cs-h1">Inflerra</h1>
+      <p class="cs-sub">AI-Powered Creator ↔ Brand Matchmaking — designing an intelligent platform that makes influencer partnerships genuinely mutual and aligned.</p>
+      <div class="cs-meta-row">
+        <div class="cs-meta-pill"><div class="cs-meta-pill-label" style="color:#c2185b">Role</div><div class="cs-meta-pill-value">Co-Founder, Lead UX/UI</div></div>
+        <div class="cs-meta-pill"><div class="cs-meta-pill-label" style="color:#c2185b">Timeline</div><div class="cs-meta-pill-value">Dec 2024 – Present</div></div>
+        <div class="cs-meta-pill"><div class="cs-meta-pill-label" style="color:#c2185b">Tools</div><div class="cs-meta-pill-value">Figma · Figma AI · Claude · Notion</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="cs-hero-placeholder" style="background:linear-gradient(135deg,#fce4ec,#e1bee7)">✨</div>
+  <div class="cs-body">
+    <div class="cs-section reveal">
+      <div class="cs-section-num">01</div>
+      <div class="cs-section-title">Overview</div>
+      <p class="cs-p">Inflerra is an AI-powered platform supporting <strong>both creators and brands equally</strong> — helping each side find partnerships that genuinely align with their goals, values, and audiences. As founding designer, I'm leading end-to-end product experience for an early-stage startup.</p>
+    </div>
+    <div class="cs-section reveal">
+      <div class="cs-section-num">02</div>
+      <div class="cs-section-title">The Problem</div>
+      <p class="cs-p">Influencer marketing is often misaligned. Brands struggle to find creators who match their audience and voice. Creators waste time on partnerships that don't reflect their values.</p>
+      <p class="cs-p"><strong>Discovery is manual, noisy, and optimized for quantity — not fit.</strong></p>
+    </div>
+    <div class="cs-section reveal">
+      <div class="cs-section-num">03</div>
+      <div class="cs-section-title">The Vision</div>
+      <p class="cs-p">AI-driven matching based on meaningful signals: audience alignment, content style, pricing, brand values, campaign goals — replacing transactional partnerships with <em>high-quality, aligned collaborations</em>.</p>
+      <div class="cs-2col">
+        <div class="cs-card"><div class="cs-card-label" style="color:var(--g1)">Creator Flow</div><ul><li>Create personalized profile</li><li>Click Match — let AI work</li><li>Negotiate and deliver</li><li>Get paid and grow</li></ul></div>
+        <div class="cs-card"><div class="cs-card-label" style="color:var(--g2)">Brand Flow</div><ul><li>New account, new campaigns</li><li>Click Match, send offers</li><li>Solidify the deal</li><li>Track results & payment</li></ul></div>
+      </div>
+    </div>
+    <div class="cs-section reveal">
+      <div class="cs-section-num">04</div>
+      <div class="cs-section-title">My Role</div>
+      <ul class="cs-ul">
+        <li>Defining end-to-end flows for creators and brands</li>
+        <li>Designing the desktop-first web experience</li>
+        <li>Establishing the design system and visual language from scratch</li>
+        <li>Translating complex AI matching logic into clear, intuitive interfaces</li>
+        <li>Collaborating with engineering on AI-assisted UX patterns</li>
+      </ul>
+      <div class="cs-chips"><span class="cs-chip">Figma AI</span><span class="cs-chip">Claude Code</span><span class="cs-chip">Design Systems</span><span class="cs-chip">AI UX Patterns</span><span class="cs-chip">0→1 Product</span></div>
+    </div>
+    <div class="cs-section reveal">
+      <div class="cs-section-num">05</div>
+      <div class="cs-section-title">Current State</div>
+      <p class="cs-p">Inflerra is in <strong>private beta</strong>. Detailed workflows aren't publicly shared yet — this page reflects the vision, approach, and design leadership behind the work.</p>
+      <div class="cs-quote">Want to learn more? I'm happy to walk through our product vision and design decisions. Feel free to reach out!</div>
+      <a class="btn btn-grad" href="https://www.inflerra.com" target="_blank" style="text-decoration:none;display:inline-flex">Visit Inflerra →</a>
+    </div>
+  </div>
+  <div class="cs-other">
+    <h3>More Projects</h3>
+    <div class="cs-other-grid">
+      <div class="cs-other-card" onclick="showCS('genemod')"><div class="cs-other-thumb" style="background:linear-gradient(135deg,#e8f5e9,#b2dfdb)">🧬</div><div class="cs-other-info"><strong>Genemod</strong><span>SaaS · Science</span></div></div>
+      <div class="cs-other-card" onclick="showCS('aroundtown')"><div class="cs-other-thumb" style="background:linear-gradient(135deg,#fff8e1,#ffecb3)">🏘️</div><div class="cs-other-info"><strong>Around Town</strong><span>Mobile · Civic</span></div></div>
+      <div class="cs-other-card" onclick="showCS('alumnify')"><div class="cs-other-thumb" style="background:linear-gradient(135deg,#ede7f6,#d1c4e9)">🎓</div><div class="cs-other-info"><strong>Alumnify</strong><span>Web · SaaS</span></div></div>
+    </div>
+  </div>
+  <div class="cs-nav-bar">
+    <button class="cs-nav-btn" onclick="showCS('genemod')"><span>Previous</span><span>← Genemod</span></button>
+    <button class="cs-nav-btn" onclick="showCS('aroundtown')"><span>Next</span><span>Around Town →</span></button>
+  </div>
+</div>
+
+<!-- ════ CASE STUDY: AROUND TOWN ════ -->
+<div class="case-study" id="cs-aroundtown">
+  <div class="cs-band" style="background:linear-gradient(135deg,#fffde7,#fff8e1)">
+    <button class="cs-back" onclick="showPage('home')">← Back to Work</button>
+    <div style="margin-top:28px">
+      <div class="cs-kicker" style="color:#f57f17">
+        <span style="width:20px;height:1.5px;background:linear-gradient(90deg,#ffbe0b,#f7567c);display:inline-block"></span>
+        Mobile · UX Research · Civic Tech
+      </div>
+      <h1 class="cs-h1">Around Town</h1>
+      <p class="cs-sub">An app empowering small, locally owned businesses — a community-driven resource supporting outreach and sales throughout the Covid-19 pandemic.</p>
+      <div class="cs-meta-row">
+        <div class="cs-meta-pill"><div class="cs-meta-pill-label" style="color:#f57f17">Role</div><div class="cs-meta-pill-value">Project Manager, Designer</div></div>
+        <div class="cs-meta-pill"><div class="cs-meta-pill-label" style="color:#f57f17">Team</div><div class="cs-meta-pill-value">E. Blakeman · M. Luu · S. Huang · K. Dao</div></div>
+        <div class="cs-meta-pill"><div class="cs-meta-pill-label" style="color:#f57f17">Type</div><div class="cs-meta-pill-value">Mobile App Design</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="cs-hero-placeholder" style="background:linear-gradient(135deg,#fff8e1,#ffecb3)">🏘️</div>
+  <div class="cs-body">
+    <div class="cs-section reveal">
+      <div class="cs-section-num">01</div>
+      <div class="cs-section-title">Overview</div>
+      <p class="cs-p">Due to Covid-19, many small businesses struggled or shut down. As restrictions tightened and capacity limits reduced foot traffic, these businesses — and the families that depend on them — faced serious hardship.</p>
+      <div class="cs-quote">"To support one's community is to support the people that helped shape everything around you." — Emily Blakeman</div>
+      <p class="cs-p"><strong>Goal:</strong> A platform that encourages community members to support local businesses through incentives, bios, reviews, and location services.</p>
+    </div>
+    <div class="cs-section reveal">
+      <div class="cs-section-num">02</div>
+      <div class="cs-section-title">Core Features</div>
+      <div class="cs-2col">
+        <div class="cs-card"><div class="cs-card-label" style="color:var(--g5)">Search</div><p>Category filters (food, clothing, online stores). Friend search adds social discovery to local business finding.</p></div>
+        <div class="cs-card"><div class="cs-card-label" style="color:var(--g4)">Promotions</div><p>Businesses list their own deals — from percentage discounts to punch card rewards. Users see what's nearby at a glance.</p></div>
+      </div>
+      <div class="cs-card" style="margin-top:14px"><div class="cs-card-label" style="color:var(--g2)">Social</div><p>Follow friends and see their reviews in a news feed. Social proof motivates users to visit businesses their community loves.</p></div>
+    </div>
+    <div class="cs-section reveal">
+      <div class="cs-section-num">03</div>
+      <div class="cs-section-title">Design Process</div>
+      <p class="cs-p">We moved through structured phases — starting with low-fidelity wireframes to explore structure and flows, then into a high-fidelity design system with a cohesive visual language built around trust and accessibility.</p>
+      <div class="cs-h4">Style Guide</div>
+      <div class="cs-chips">
+        <span class="cs-chip" style="background:#4A75E4;color:white;border-color:#4A75E4">#4A75E4 — Primary Blue</span>
+        <span class="cs-chip" style="background:#ECDA9B;color:#5a4500;border-color:#d4b800">#ECDA9B — Warm Yellow</span>
+        <span class="cs-chip" style="background:#A5C9FF;color:#003780;border-color:#7eadee">#A5C9FF — Sky Blue</span>
+      </div>
+      <p class="cs-p">The high-fidelity design covered onboarding, account creation, search, business profiles, reviews, social feeds, promotions, and personalized settings.</p>
+    </div>
+    <div class="cs-section reveal">
+      <div class="cs-section-num">04</div>
+      <div class="cs-section-title">Key User Flows</div>
+      <ul class="cs-ul">
+        <li>Get onboarded as a consumer or business user</li>
+        <li>Search and discover local businesses by category</li>
+        <li>View business profiles with reviews and hours</li>
+        <li>Create and post reviews to earn points</li>
+        <li>Browse and activate promotions and deals</li>
+        <li>Socialize with friends, view their recommendations</li>
+        <li>Personalize settings for content and visibility</li>
+      </ul>
+    </div>
+  </div>
+  <div class="cs-other">
+    <h3>More Projects</h3>
+    <div class="cs-other-grid">
+      <div class="cs-other-card" onclick="showCS('genemod')"><div class="cs-other-thumb" style="background:linear-gradient(135deg,#e8f5e9,#b2dfdb)">🧬</div><div class="cs-other-info"><strong>Genemod</strong><span>SaaS · Science</span></div></div>
+      <div class="cs-other-card" onclick="showCS('inflerra')"><div class="cs-other-thumb" style="background:linear-gradient(135deg,#fce4ec,#e1bee7)">✨</div><div class="cs-other-info"><strong>Inflerra</strong><span>AI · Mobile</span></div></div>
+      <div class="cs-other-card" onclick="showCS('alumnify')"><div class="cs-other-thumb" style="background:linear-gradient(135deg,#ede7f6,#d1c4e9)">🎓</div><div class="cs-other-info"><strong>Alumnify</strong><span>Web · SaaS</span></div></div>
+    </div>
+  </div>
+  <div class="cs-nav-bar">
+    <button class="cs-nav-btn" onclick="showCS('inflerra')"><span>Previous</span><span>← Inflerra</span></button>
+    <button class="cs-nav-btn" onclick="showCS('alumnify')"><span>Next</span><span>Alumnify →</span></button>
+  </div>
+</div>
+
+<!-- ════ CASE STUDY: ALUMNIFY ════ -->
+<div class="case-study" id="cs-alumnify">
+  <div class="cs-band" style="background:linear-gradient(135deg,#f3e5f5,#ede7f6)">
+    <button class="cs-back" onclick="showPage('home')">← Back to Work</button>
+    <div style="margin-top:28px">
+      <div class="cs-kicker" style="color:#7b1fa2">
+        <span style="width:20px;height:1.5px;background:linear-gradient(90deg,#9c27b0,#3a86ff);display:inline-block"></span>
+        Web Design · UX Research · SaaS
+      </div>
+      <h1 class="cs-h1">Alumnify</h1>
+      <p class="cs-sub">A web application facilitating networking, mentorship, and career development between alumni and students through mutual interests and community groups.</p>
+      <div class="cs-meta-row">
+        <div class="cs-meta-pill"><div class="cs-meta-pill-label" style="color:#7b1fa2">Role</div><div class="cs-meta-pill-value">UX/UI Designer</div></div>
+        <div class="cs-meta-pill"><div class="cs-meta-pill-label" style="color:#7b1fa2">Timeline</div><div class="cs-meta-pill-value">Jan – Mar 2023</div></div>
+        <div class="cs-meta-pill"><div class="cs-meta-pill-label" style="color:#7b1fa2">Team</div><div class="cs-meta-pill-value">E. Blakeman · E. Eckey · E. Yu · K. Dao</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="cs-hero-placeholder" style="background:linear-gradient(135deg,#ede7f6,#d1c4e9)">🎓</div>
+  <div class="cs-body">
+    <div class="cs-section reveal">
+      <div class="cs-section-num">01</div>
+      <div class="cs-section-title">Overview</div>
+      <p class="cs-p">Alumnify facilitates <strong>networking and engagement</strong> between users through mutual interests and groups — enabling mentorship, career development, and community connection for alumni, students, and university partners.</p>
+      <div class="cs-2col">
+        <div class="cs-card"><div class="cs-card-label" style="color:var(--g1)">Alumni</div><p>Lost connectedness post-graduation — want to stay involved and mentor current students.</p></div>
+        <div class="cs-card"><div class="cs-card-label" style="color:var(--g5)">Students</div><p>Looking for mentorship and employment opportunities as they plan post-university life.</p></div>
+      </div>
+      <div class="cs-card" style="margin-top:14px"><div class="cs-card-label" style="color:var(--g3)">University Leadership</div><p>Advisors, partners, and employers who need to understand alumni career paths and identify partnerships.</p></div>
+    </div>
+    <div class="cs-section reveal">
+      <div class="cs-section-num">02</div>
+      <div class="cs-section-title">Research</div>
+      <p class="cs-p">We defined the problem by identifying that alumni lack post-graduation connection pathways, students lack mentorship structures, and university leadership lacks visibility into alumni outcomes.</p>
+      <div class="cs-h4">Synthesis & Ideation</div>
+      <p class="cs-p">Each team member wrote key terms on sticky notes, organized into clusters by category. We voted on the most important factors — ensuring design decisions were grounded in research, not assumption.</p>
+    </div>
+    <div class="cs-section reveal">
+      <div class="cs-section-num">03</div>
+      <div class="cs-section-title">Design</div>
+      <p class="cs-p">We designed a user-friendly, simplistic, and informative platform covering the full experience — from onboarding through daily social interaction:</p>
+      <ul class="cs-ul">
+        <li>Login and role-based onboarding for alumni, students, and staff</li>
+        <li>User profiles with career history and interests</li>
+        <li>Interest group creation, posting, and event management</li>
+        <li>Private messaging and notification system</li>
+        <li>Search with filters for users and groups</li>
+        <li>Customizable settings for visibility, content, and multimedia</li>
+        <li>University staff views for database and marketing management</li>
+      </ul>
+    </div>
+    <div class="cs-section reveal">
+      <div class="cs-section-num">04</div>
+      <div class="cs-section-title">Reflection</div>
+      <div class="cs-step">
+        <div class="cs-step-num">1</div>
+        <div class="cs-step-content"><h4>Center Design Around User Research</h4><p>Understanding users' needs led to features genuinely tailored to their desires — not what we assumed they wanted.</p></div>
+      </div>
+      <div class="cs-step">
+        <div class="cs-step-num">2</div>
+        <div class="cs-step-content"><h4>Accessibility is Always a Priority</h4><p>Extra settings for visibility, content filters, and multimedia opened the platform to a diverse range of abilities and enhanced the experience for everyone.</p></div>
+      </div>
+      <div class="cs-step">
+        <div class="cs-step-num">3</div>
+        <div class="cs-step-content"><h4>Team Timelines Are Tremendously Helpful</h4><p>Creating per-phase deadlines kept everyone accountable across different schedules and gave us buffer time for quality improvements.</p></div>
+      </div>
+    </div>
+  </div>
+  <div class="cs-other">
+    <h3>More Projects</h3>
+    <div class="cs-other-grid">
+      <div class="cs-other-card" onclick="showCS('genemod')"><div class="cs-other-thumb" style="background:linear-gradient(135deg,#e8f5e9,#b2dfdb)">🧬</div><div class="cs-other-info"><strong>Genemod</strong><span>SaaS · Science</span></div></div>
+      <div class="cs-other-card" onclick="showCS('inflerra')"><div class="cs-other-thumb" style="background:linear-gradient(135deg,#fce4ec,#e1bee7)">✨</div><div class="cs-other-info"><strong>Inflerra</strong><span>AI · Mobile</span></div></div>
+      <div class="cs-other-card" onclick="showCS('aroundtown')"><div class="cs-other-thumb" style="background:linear-gradient(135deg,#fff8e1,#ffecb3)">🏘️</div><div class="cs-other-info"><strong>Around Town</strong><span>Mobile · Civic</span></div></div>
+    </div>
+  </div>
+  <div class="cs-nav-bar">
+    <button class="cs-nav-btn" onclick="showCS('aroundtown')"><span>Previous</span><span>← Around Town</span></button>
+    <div></div>
+  </div>
+</div>
+
+<!-- ════ RESUME ════ -->
+<div class="page" id="page-resume">
+  <div class="resume-wrap">
+    <div class="resume-top">
+      <div>
+        <div class="resume-name">Emily Blakeman</div>
+        <div class="resume-role">UI / UX Designer & Co-Founder</div>
+      </div>
+      <div class="resume-contact">
+        <div><a href="/cdn-cgi/l/email-protection#b3d6d1dfd2d8d6ded2dd8583838bf3d4ded2dadf9dd0dcde"><span class="__cf_email__" data-cfemail="bfdaddd3ded4dad2ded1898f8f87ffd8d2ded6d391dcd0d2">[email&#160;protected]</span></a></div>
+        <div><a href="https://emily-blakeman.com" target="_blank">emily-blakeman.com</a></div>
+        <div><a href="https://linkedin.com/in/eblakeman" target="_blank">linkedin.com/in/eblakeman</a></div>
+        <div>Seattle, WA</div>
+      </div>
+    </div>
+    <div class="resume-sec">
+      <div class="resume-sec-title">Experience</div>
+      <div class="exp">
+        <div class="exp-head"><div class="exp-role">Co-Founder & Head of Design</div><div class="exp-date">Dec 2024 – Present</div></div>
+        <div class="exp-co">Inflerra · Redmond, WA</div>
+        <ul class="exp-list">
+          <li>Co-founded and led end-to-end UX/UI for a gamified AI-powered influencer-brand matchmaking platform.</li>
+          <li>Built visual design system from scratch — brand identity, UI components, iconography.</li>
+          <li>Designed all core workflows: onboarding, campaign creation, matchmaking, analytics dashboards.</li>
+          <li>Collaborated with product and engineering to define MVP scope and Q4 launch.</li>
+        </ul>
+      </div>
+      <div class="exp">
+        <div class="exp-head"><div class="exp-role">UI / UX Designer II</div><div class="exp-date">Dec 2023 – Dec 2025</div></div>
+        <div class="exp-co">Genemod · Seattle, WA</div>
+        <ul class="exp-list">
+          <li>Led design for core SaaS features used by 150+ biotech and academic labs across U.S. and Europe.</li>
+          <li>Designed cross-platform workflows supporting 1M+ R&D activities.</li>
+          <li>Created modular Figma prototypes contributing to a scalable design system.</li>
+          <li>Conducted user interviews and usability tests with scientists and lab managers.</li>
+          <li>Contributed to 798K+ impressions in one month through UI/UX marketing assets.</li>
+          <li>Partnered with sales to close 10+ new accounts presenting design to scientists.</li>
+        </ul>
+      </div>
+      <div class="exp">
+        <div class="exp-head"><div class="exp-role">UI / UX Designer & User Researcher</div><div class="exp-date">Sept 2022 – June 2023</div></div>
+        <div class="exp-co">City of Seattle · Seattle, WA</div>
+        <ul class="exp-list">
+          <li>Designed a hybrid physical-digital board game teaching civic budgeting — part of a $3M initiative.</li>
+          <li>Led user research and usability testing with families to optimize engagement and learning outcomes.</li>
+        </ul>
+      </div>
+      <div class="exp">
+        <div class="exp-head"><div class="exp-role">Graphic Design & Social Media Intern</div><div class="exp-date">Aug – Nov 2022</div></div>
+        <div class="exp-co">Fast Startup · Seattle, WA</div>
+        <ul class="exp-list">
+          <li>Developed data-driven visual content contributing to increased organic reach.</li>
+          <li>Applied A/B testing to refine visual assets based on interaction analytics.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="resume-sec">
+      <div class="resume-sec-title">Education</div>
+      <div class="exp">
+        <div class="exp-head"><div class="exp-role">BS — Informatics, Human-Computer Interaction</div><div class="exp-date">Graduated Dec 2023</div></div>
+        <div class="exp-co">University of Washington, Seattle</div>
+        <ul class="exp-list"><li>Minor in Entrepreneurship · WA State Opportunity Scholar · Vancouver Rotary Scholar · Senior Citizenship Award</li></ul>
+      </div>
+    </div>
+    <div class="resume-sec">
+      <div class="resume-sec-title">Skills & Tools</div>
+      <div class="skills-grid">
+        <div class="skill-box"><h4>Design</h4><p>UX/UI, Interaction, Accessible Design, Visual Design, Wireframing, Prototyping, Design Systems</p></div>
+        <div class="skill-box"><h4>Research</h4><p>User Interviews, Usability Testing, Journey Mapping, A/B Testing, Competitor Analysis, IA</p></div>
+        <div class="skill-box"><h4>Software</h4><p>Figma, Sketch, Miro, Photoshop, Illustrator, AfterEffects, Procreate, HTML, CSS</p></div>
+        <div class="skill-box"><h4>Other</h4><p>Chinese Fluency, Cross-functional Collaboration, Rapid Iteration, Human-Centered Design</p></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ════ CONTACT ════ -->
+<div class="page" id="page-contact">
+  <div class="contact-wrap">
+    <div>
+      <h2 class="contact-heading">Let's build something <span class="grad">great</span> together.</h2>
+      <p class="contact-sub">Open to new projects, collaborations, or just a good conversation about design.</p>
+      <div class="contact-links">
+        <a class="c-link" href="/cdn-cgi/l/email-protection#3752555b565c525a56590107070f77505a565e5b1954585a"><div class="c-link-icon">✉️</div><div class="c-link-text"><span class="__cf_email__" data-cfemail="dfbabdb3beb4bab2beb1e9efefe79fb8b2beb6b3f1bcb0b2">[email&#160;protected]</span></div></a>
+        <a class="c-link" href="https://linkedin.com/in/eblakeman" target="_blank"><div class="c-link-icon">💼</div><div class="c-link-text">linkedin.com/in/eblakeman</div></a>
+        <a class="c-link" href="https://emily-blakeman.com" target="_blank"><div class="c-link-icon">🌐</div><div class="c-link-text">emily-blakeman.com</div></a>
+      </div>
+    </div>
+    <div class="cf">
+      <div class="cf-group"><label class="cf-label">Your Name</label><input class="cf-input" type="text" placeholder="Jane Smith" id="fn"></div>
+      <div class="cf-group"><label class="cf-label">Email</label><input class="cf-input" type="email" placeholder="jane@company.com" id="fe"></div>
+      <div class="cf-group"><label class="cf-label">Message</label><textarea class="cf-textarea" placeholder="Tell me about your project or just say hi..." id="fm"></textarea></div>
+      <button class="cf-submit" onclick="sendMsg()">Send Message ✦</button>
+      <div class="cf-success" id="cf-ok">✓ Message sent! Emily will be in touch soon 🎉</div>
+    </div>
+  </div>
+</div>
+
+<footer>© 2026 Emily Blakeman · Seattle, WA</footer>
+
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
