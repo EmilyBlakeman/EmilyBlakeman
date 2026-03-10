@@ -153,9 +153,22 @@ function filterWork(cat, btn) {
 }
 
 // ── CONTACT ──
-function sendMsg() {
-  if (!document.getElementById('fn').value || !document.getElementById('fe').value || !document.getElementById('fm').value) return;
-  document.getElementById('cf-ok').style.display = 'block';
-  ['fn','fe','fm'].forEach(id => document.getElementById(id).value = '');
-  setTimeout(() => document.getElementById('cf-ok').style.display = 'none', 5000);
+function sendMsg(prefix = '') {
+  const idPrefix = prefix ? `${prefix}-` : '';
+  const name = document.getElementById(`${idPrefix}fn`).value.trim();
+  const email = document.getElementById(`${idPrefix}fe`).value.trim();
+  const message = document.getElementById(`${idPrefix}fm`).value.trim();
+  const success = document.getElementById(prefix ? `${prefix}-cf-ok` : 'cf-ok');
+
+  if (!name || !email || !message) return;
+
+  const subject = encodeURIComponent(`Portfolio contact from ${name}`);
+  const body = encodeURIComponent(
+    `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
+  );
+
+  window.location.href = `mailto:eblakeman6008@gmail.com?subject=${subject}&body=${body}`;
+  success.style.display = 'block';
+  ['fn','fe','fm'].forEach(id => document.getElementById(`${idPrefix}${id}`).value = '');
+  setTimeout(() => success.style.display = 'none', 5000);
 }
