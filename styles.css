@@ -125,7 +125,7 @@ nav {
 }
 .hero-graphic svg { width: 100%; height: auto; }
 
-/* Scattered fact cards — float freely over right side of hero */
+/* Scattered fact cards Â— float freely over right side of hero */
 .fact-grid {
   position: absolute;
   top: 0; right: 0;
@@ -134,7 +134,7 @@ nav {
   pointer-events: none;
   z-index: 3;
 }
-/* Scattered fact wraps — own the position + float animation */
+/* Scattered fact wraps Â— own the position + float animation */
 .fact-wrap {
   position: absolute;
   display: inline-block;
@@ -392,7 +392,7 @@ nav {
 }
 .process-title {
   font-family: 'Playfair Display', serif; font-weight: 700;
-  font-size: .95rem; color: var(--ink); margin-bottom: 8px; flex: 0 0 100%;
+  font-size: .95rem; color: var(--ink); margin-bottom: 10px; flex: 0 0 100%;
 }
 .process-desc { font-size: .78rem; color: var(--muted); line-height: 1.7; font-weight: 400; flex: 0 0 100%; }
 @media(max-width: 768px) { .process-strip { grid-template-columns: 1fr 1fr; } }
@@ -766,7 +766,7 @@ nav {
 .resume-wrap { max-width: var(--max-w); margin: 0 auto; padding: 72px var(--side) 80px; }
 .resume-top {
   display: flex; justify-content: space-between; align-items: flex-start;
-  margin-bottom: 48px; padding-bottom: 32px; border-bottom: 2px solid var(--border);
+  margin-bottom: 40px; padding-bottom: 18px; border-bottom: 2px solid var(--border);
 }
 .resume-name {
   font-family: 'Playfair Display', serif; font-weight: 700; font-size: 2.4rem;
@@ -790,7 +790,7 @@ nav {
 .exp-list { list-style: none; }
 .exp-list li { font-size: .86rem; color: var(--ink2); line-height: 1.7; padding-left: 16px; position: relative; margin-bottom: 5px; font-weight: 400; }
 .exp-list li::before {
-  content: '?'; position: absolute; left: 0; font-size: .72rem; top: 3px;
+  content: '\2022'; position: absolute; left: 0; font-size: .9rem; top: 1px;
   background: var(--grad-main); -webkit-background-clip: text; -webkit-text-fill-color: transparent;
   font-weight: 700;
 }
@@ -871,7 +871,7 @@ nav {
 }
 .btn-about:hover { box-shadow: 0 12px 30px rgba(75, 115, 199, .28); }
 
-/* Form — clean bare fields, no card wrapper */
+/* Form Â— clean bare fields, no card wrapper */
 .cf { display: flex; flex-direction: column; gap: 16px; }
 .cf-group { display: flex; flex-direction: column; gap: 6px; }
 .cf-label { font-size: .68rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
@@ -1324,5 +1324,74 @@ footer {
 
 
 
+.resume-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 260px;
+  gap: 36px;
+  align-items: start;
+}
+.resume-side {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.resume-pane {
+  background: white;
+  border-radius: var(--radius);
+  padding: 28px;
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 20px rgba(0,0,0,.05);
+}
+.resume-pane .resume-sec-title {
+  margin-bottom: 18px;
+}
+.resume-pane .exp {
+  margin-bottom: 0;
+}
+.resume-pane .skills-grid {
+  grid-template-columns: 1fr;
+}
+.resume-main .resume-sec {
+  margin-bottom: 0;
+}
+.resume-side .skill-box {
+  box-shadow: none;
+}
+.resume-side .skill-box:hover {
+  transform: none;
+  box-shadow: none;
+}
+@media(max-width: 900px) {
+  .resume-layout {
+    grid-template-columns: 1fr;
+  }
+  .resume-side {
+    order: 2;
+  }
+  .resume-main {
+    order: 1;
+  }
+}
 
 
+.resume-skill-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.resume-skill-group h4 {
+  font-size: .66rem;
+  font-weight: 700;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  background: var(--grad-main);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.resume-skill-group p {
+  font-size: .82rem;
+  color: var(--ink2);
+  line-height: 1.7;
+  font-weight: 400;
+}
