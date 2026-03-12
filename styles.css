@@ -307,6 +307,16 @@ nav {
 .about-grid { display: grid; grid-template-columns: 1fr 380px; gap: 48px; align-items: start; }
 .about-body { font-size: 1rem; color: var(--ink2); line-height: 1.85; margin-bottom: 18px; font-weight: 400; }
 .about-body strong { color: var(--ink); font-weight: 600; }
+.about-sidebar { display: flex; flex-direction: column; gap: 16px; }
+.about-photo {
+  background: white; border-radius: var(--radius); overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: 0 2px 20px rgba(0,0,0,.05);
+}
+.about-photo img {
+  width: 100%; display: block; aspect-ratio: 4 / 5;
+  object-fit: cover; object-position: center top;
+}
 
 .skill-group { margin-top: 40px; }
 .skill-group-label {
@@ -1395,3 +1405,5 @@ footer {
   line-height: 1.7;
   font-weight: 400;
 }
+
+
