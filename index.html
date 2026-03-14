@@ -13,10 +13,13 @@
 <div id="cur-aura"></div>
 
 <nav>
-  <a class="nav-logo" href="#" onclick="showPage('home');return false;">Emily Blakeman</a>
+  <a class="nav-logo" href="#" onclick="showPage('home');return false;">
+    <img class="nav-logo-mark" src="EB Logo.png" alt="EB logo">
+    <span class="nav-logo-text">Emily Blakeman</span>
+  </a>
   <ul class="nav-links">
-    <li><a href="#" onclick="showPage('home');return false;" data-page="home" class="active">Home</a></li>
     <li><a href="#" onclick="showPage('about');return false;" data-page="about">About</a></li>
+    <li><a href="#" onclick="showPage('gallery');return false;" data-page="gallery">Gallery</a></li>
     <li><a href="#" onclick="showPage('resume');return false;" data-page="resume">Resume</a></li>
     <li><a href="#" onclick="showPage('contact');return false;" data-page="contact">Contact</a></li>
   </ul>
@@ -81,7 +84,7 @@
   <div id="home-work" class="home-work-section">
     <div class="home-work-header reveal">
       <div class="section-eyebrow">Selected Work</div>
-      <h2 class="section-title">Projects that move people.</h2>
+      <h2 class="section-title">Case Studies</h2>
     </div>
 
     <div class="hpc" onclick="showCS('genemod')">
@@ -126,17 +129,10 @@
       </div>
     </div>
 
-    <div class="hpc" onclick="showCS('alumnify')">
-      <div class="hpc-image" style="background:#f5ede0">
-        <img class="hpc-img-photo" src="Alumnify.png" alt="Alumnify screenshot">
-      </div>
-      <div class="hpc-body">
-        <div class="hpc-tags"><span class="work-tag">Web Design</span><span class="work-tag">SaaS</span><span class="work-tag">Research</span></div>
-        <h3 class="hpc-title">Alumnify</h3>
-        <p class="hpc-desc">A web application connecting alumni and students through mutual interests — enabling mentorship, networking, and career development across university communities.</p>
-        <div class="hpc-cta">View Case Study <span class="hpc-arrow">→</span></div>
-      </div>
+    <div class="earlier-case-studies-cta reveal">
+      <a class="btn btn-ghost earlier-case-studies-btn" href="#" onclick="showPage('earlier');return false;">View earlier case studies</a>
     </div>
+
 
     <div class="section-eyebrow reveal" style="margin: 40px 0 16px;">My design process</div>
     <div class="process-strip reveal">
@@ -180,80 +176,101 @@
   </div>
 </div>
 
-<!-- ════ ABOUT ════ -->
-<div class="page" id="page-about">
-  <div class="about-wrap">
-    <h2 class="about-hero-line reveal">Hi, I'm Emily</h2>
-    <div class="about-grid">
-      <div>
-        <p class="about-body reveal">I'm a Seattle-based UX/UI designer with a BS in Informatics (Human-Computer Interaction) from the <strong>University of Washington</strong>.</p>
-        <p class="about-body reveal reveal-delay-1">I've designed products used by labs across the U.S. and Europe, contributed to a city-funded civic education initiative, and now serve as <strong>Co-Founder &amp; Head of Design at Inflerra</strong>, an AI-powered influencer-brand matchmaking platform I'm building from the ground up.</p>
-        <p class="about-body reveal reveal-delay-2">My approach is deeply human-centered and research-driven. I don't guess what users need, I like to talk to them, test with them, and iterate until the solution feels simple, intuitive, and obvious in hindsight.</p>
-        <p class="about-body reveal reveal-delay-3">Outside of design, I enjoy exploring new creative tools, traveling, and finding inspiration in everyday interactions.</p>
+<!-- ---- EARLIER CASE STUDIES ---- -->
+<div class="page" id="page-earlier">
+  <div class="portfolio-wrap earlier-case-studies-wrap">
+    <button class="cs-back reveal" onclick="showPage('home')">&larr; Back to Home</button>
+    <div class="earlier-case-studies-head reveal reveal-delay-1">
+      <h2 class="section-title">Earlier Case Studies</h2>
+      <p class="section-sub">Selected work from an earlier chapter of my portfolio</p>
+    </div>
 
-        <div class="about-legacy reveal reveal-delay-3">
-          <div class="about-legacy-header">More About Me</div>
-          <div class="about-legacy-grid">
-            <div class="about-legacy-card">
-              <h3>My Expertise</h3>
-              <ul class="about-legacy-list">
-                <li>Major in Informatics, Human Computer Interactions at the University of Washington, Seattle</li>
-                <li>Minor in Entrepreneurship</li>
-                <li>Passion for designing accessible experiences for users</li>
-                <li>Love for creating and developing mobile and web applications</li>
-              </ul>
-            </div>
-            <div class="about-legacy-card">
-              <h3>Frequently Used Programs</h3>
-              <p>Adobe Photoshop, Adobe Illustrator, Sketch, Procreate, Canva, Squarespace, HTML, CSS, Figma, Adobe Creative Cloud, Affinity Designer, Wix</p>
-            </div>
-            <div class="about-legacy-card about-legacy-card-wide">
-              <h3>My Passions</h3>
-              <p>Traveling and the outdoors, designing new games and apps, creating artwork, playing and making music (piano, guitar, uke), my best friend Vango, and exploring new cuisine.</p>
-            </div>
-          </div>
-        </div>
-        <div class="skill-group reveal reveal-delay-3">
-          <div class="skill-group-label">Design</div>
-          <div class="skill-pills">
-            <span class="pill pill-violet">UX / UI Design</span><span class="pill pill-violet">Interaction Design</span><span class="pill pill-violet">Visual Design</span><span class="pill pill-violet">Design Systems</span><span class="pill pill-violet">Accessible Design</span><span class="pill pill-violet">Prototyping</span>
-          </div>
-          <div class="skill-group-label">Research</div>
-          <div class="skill-pills">
-            <span class="pill pill-coral">User Interviews</span><span class="pill pill-coral">Usability Testing</span><span class="pill pill-coral">Journey Mapping</span><span class="pill pill-coral">A/B Testing</span><span class="pill pill-coral">Competitor Analysis</span>
-          </div>
-          <div class="skill-group-label">Tools</div>
-          <div class="skill-pills">
-            <span class="pill pill-mint">Figma</span><span class="pill pill-mint">Sketch</span><span class="pill pill-mint">Miro</span><span class="pill pill-mint">Photoshop</span><span class="pill pill-mint">Illustrator</span><span class="pill pill-mint">AfterEffects</span><span class="pill pill-mint">Procreate</span><span class="pill pill-mint">HTML/CSS</span>
-          </div>
-        </div>
+    <div class="hpc reveal reveal-delay-2" onclick="showCS('alumnify')">
+      <div class="hpc-image" style="background:#f5ede0">
+        <img class="hpc-img-photo" src="Alumnify.png" alt="Alumnify screenshot">
       </div>
-      <div class="about-sidebar">
-        <div class="about-photo reveal reveal-delay-1">
-          <img src="About Page Photos/Aboutpageme.webp" alt="Emily Blakeman portrait">
-        </div>
-        <div class="about-card reveal">
-          <div class="about-card-title"><div class="icon">✨</div>A little about me</div>
-          <div class="fact-row"><div class="fact-em">📍</div><div>Located in Seattle, Washington</div></div>
-          <div class="fact-row"><div class="fact-em">💛💜</div><div>Bilingual first-generation UW graduate</div></div>
-          <div class="fact-row"><div class="fact-em">💻</div><div>BS in Informatics, HCI</div></div>
-          <div class="fact-row"><div class="fact-em">📲</div><div>Minor in Entrepreneurship</div></div>
-          <div class="fact-row"><div class="fact-em">🌏</div><div>Fluent in Mandarin Chinese</div></div>
-          <div class="fact-row"><div class="fact-em">🚀</div><div>Actively exploring Figma AI, Cursor & Claude</div></div>
-        </div>
-        <div class="honors-card reveal reveal-delay-1">
-          <div class="honors-card-title">🏆 Honors & Awards</div>
-          <div class="honor-row">WA State Opportunity Scholar</div>
-          <div class="honor-row">Vancouver Rotary Scholar</div>
-          <div class="honor-row">Senior Citizenship Award</div>
-          <div class="honor-row">BS Informatics, UW · Dec 2023</div>
-        </div>
+      <div class="hpc-body">
+        <div class="hpc-tags"><span class="work-tag">Web Design</span><span class="work-tag">SaaS</span><span class="work-tag">Research</span></div>
+        <h3 class="hpc-title">Alumnify</h3>
+        <p class="hpc-desc">A web application connecting alumni and students through mutual interests &mdash; enabling mentorship, networking, and career development across university communities.</p>
+        <div class="hpc-cta">View Case Study <span class="hpc-arrow">&rarr;</span></div>
       </div>
     </div>
   </div>
 </div>
+<!-- ---- ABOUT ---- -->
+<div class="page" id="page-about">
+  <div class="about-wrap">
+  <div class="about-hero">
+    <div class="about-hero-copy">
+      <h2 class="about-hero-line reveal">Hi, I'm Emily</h2>
+      <p class="about-body reveal">I'm a Seattle-based UX/UI designer with a BS in Informatics (Human-Computer Interaction) from the <strong>University of Washington</strong>.</p>
+      <p class="about-body reveal reveal-delay-1">I've designed products used by labs across the U.S. and Europe, contributed to a city-funded civic education initiative, and now serve as <strong>Co-Founder &amp; Head of Design at Inflerra</strong>, an AI-powered influencer-brand matchmaking platform I'm building from the ground up.</p>
 
-<!-- ════ PORTFOLIO ════ -->
+      <p class="about-body reveal reveal-delay-2">My approach is deeply human-centered and research-driven. I don't guess what users need, I like to talk to them, test with them, and iterate until the solution feels simple, intuitive, and obvious in hindsight.</p>
+      <p class="about-body reveal reveal-delay-3">Outside of design, I enjoy exploring new creative tools, traveling, and finding inspiration in everyday interactions.</p>
+    </div>
+    <div class="about-photo reveal reveal-delay-1">
+      <img src="About Page Photos/Aboutpageme.webp" alt="Emily Blakeman portrait">
+    </div>
+  </div>
+
+  <section class="about-section about-section-no-divider reveal reveal-delay-2">
+    <div class="about-expertise-card">
+      <h3 class="about-expertise-title">My Expertise</h3>
+      <div class="about-expertise-grid">
+        <div>
+          <div class="about-expertise-lines">
+            <div class="about-expertise-line">&#127891; Informatics (HCI) graduate from the University of Washington, Seattle</div>
+            <div class="about-expertise-line">&#128640; Skilled in transforming complex ideas into user-centered designs</div>
+            <div class="about-expertise-line">&#129513; Focused on accessibility, storytelling, and intuitive user flows</div>
+            <div class="about-expertise-line">&#128187; Experienced in creating and developing responsive web and mobile apps</div>
+          </div>
+          <div class="about-expertise-cta-copy">Curious to see more of my work?</div>
+          <a class="btn btn-ghost about-projects-btn" href="#" onclick="showPage('home'); setTimeout(function(){ document.getElementById('home-work').scrollIntoView({behavior:'smooth'}); }, 120); return false;">View my projects</a>
+        </div>
+        <div class="about-tools-col">
+          <div class="about-tools-title">Tools I use most</div>
+          <p class="about-tools-list">Figma &middot; Adobe Creative Cloud &middot; Illustrator &middot; Photoshop &middot; Procreate &middot; HTML/CSS</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section reveal reveal-delay-3">
+    <div class="about-section-label">Design Practice</div>
+    <div class="skill-group">
+      <div class="skill-group-label">Design</div>
+      <div class="skill-pills">
+        <span class="pill pill-violet">UX / UI Design</span><span class="pill pill-violet">Interaction Design</span><span class="pill pill-violet">Visual Design</span><span class="pill pill-violet">Design Systems</span><span class="pill pill-violet">Accessible Design</span><span class="pill pill-violet">Prototyping</span>
+      </div>
+      <div class="skill-group-label">Research</div>
+      <div class="skill-pills">
+        <span class="pill pill-coral">User Interviews</span><span class="pill pill-coral">Usability Testing</span><span class="pill pill-coral">Journey Mapping</span><span class="pill pill-coral">A/B Testing</span><span class="pill pill-coral">Competitor Analysis</span>
+      </div>
+      <div class="skill-group-label">Tools</div>
+      <div class="skill-pills">
+        <span class="pill pill-mint">Figma</span><span class="pill pill-mint">Sketch</span><span class="pill pill-mint">Miro</span><span class="pill pill-mint">Photoshop</span><span class="pill pill-mint">Illustrator</span><span class="pill pill-mint">AfterEffects</span><span class="pill pill-mint">Procreate</span><span class="pill pill-mint">HTML/CSS</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section reveal">
+    <div class="about-section-label">A Little About Me</div>
+    <div class="about-card">
+      <div class="about-card-title"><div class="icon">&#10024;</div>A little about me</div>
+      <div class="fact-row"><div class="fact-em">&#128205;</div><div>Located in Seattle, Washington</div></div>
+      <div class="fact-row"><div class="fact-em">&#128155;&#127891;</div><div>Bilingual first-generation UW graduate</div></div>
+      <div class="fact-row"><div class="fact-em">&#128187;</div><div>BS in Informatics, HCI</div></div>
+      <div class="fact-row"><div class="fact-em">&#128242;</div><div>Minor in Entrepreneurship</div></div>
+      <div class="fact-row"><div class="fact-em">&#127759;</div><div>Fluent in Mandarin Chinese</div></div>
+      <div class="fact-row"><div class="fact-em">&#128640;</div><div>Actively exploring Figma AI, Cursor & Claude</div></div>
+    </div>
+  </section>
+</div>
+</div>
+
+<!-- ---- PORTFOLIO ---- -->
 <div class="page" id="page-portfolio">
   <div class="portfolio-wrap">
     <div class="section-eyebrow reveal">Selected Work</div>
@@ -652,6 +669,49 @@
   </div>
 </div>
 
+<!-- ---- GALLERY ---- -->
+<div class="page" id="page-gallery">
+  <div class="gallery-wrap">
+    <div class="gallery-hero reveal">
+      <h2 class="gallery-title">Welcome to my Gallery :)</h2>
+      <p class="gallery-sub">I believe creativity extends far beyond pixels.</p>
+      <p class="gallery-sub">Through painting and travel, I explore <strong>color</strong>, <strong>form</strong>, and <strong>emotion</strong> &mdash; the same principles that shape my approach to design.</p>
+      <p class="gallery-sub">This gallery captures moments, I've both painted and lived, that continue to inspire how I see and create.</p>
+    </div>
+
+    <section class="gallery-section reveal reveal-delay-1">
+      <h3 class="gallery-section-title">&#127912; Artwork</h3>
+      <div class="gallery-artwork-shell">
+        <button class="gallery-scroll-btn gallery-scroll-btn-left is-hidden" id="artwork-scroll-left" type="button" aria-label="Scroll artwork to the left">&larr;</button>
+        <div class="gallery-artwork-row" id="artwork-scroll">
+          <figure class="gallery-art-card"><img class="gallery-art-img" src="Gallery/Flower Art.webp" alt="Flower artwork by Emily Blakeman"></figure>
+          <figure class="gallery-art-card"><img class="gallery-art-img" src="Gallery/Bird Art.webp" alt="Bird artwork by Emily Blakeman"></figure>
+          <figure class="gallery-art-card"><img class="gallery-art-img" src="Gallery/Elephant Art.webp" alt="Elephant artwork by Emily Blakeman"></figure>
+          <figure class="gallery-art-card"><img class="gallery-art-img" src="Gallery/Flower2 Art.webp" alt="Flower artwork variation by Emily Blakeman"></figure>
+          <figure class="gallery-art-card"><img class="gallery-art-img" src="Gallery/Frog Art.webp" alt="Frog artwork by Emily Blakeman"></figure>
+          <figure class="gallery-art-card"><img class="gallery-art-img" src="Gallery/Moon Art.webp" alt="Moon artwork by Emily Blakeman"></figure>
+        </div>
+        <button class="gallery-scroll-btn gallery-scroll-btn-right" id="artwork-scroll-right" type="button" aria-label="Scroll artwork to the right">&rarr;</button>
+      </div>
+    </section>
+
+    <section class="gallery-section reveal reveal-delay-2">
+      <h3 class="gallery-section-title">&#127757; Travel &amp; Inspiration</h3>
+      <p class="gallery-section-sub">Traveling teaches me to see design everywhere &mdash; in architecture, nature, and daily life.<br>These moments remind me that <strong>inspiration</strong> often <strong>starts with curiosity</strong>.</p>
+      <div class="gallery-placeholder-grid">
+        <figure class="gallery-art-card"><img class="gallery-art-img" src="Travel & Inspiration/Barcelona.webp" alt="Barcelona travel photo by Emily Blakeman"></figure>
+        <figure class="gallery-art-card"><img class="gallery-art-img" src="Travel & Inspiration/Camp.webp" alt="Camping travel photo by Emily Blakeman"></figure>
+        <figure class="gallery-art-card"><img class="gallery-art-img" src="Travel & Inspiration/China.webp" alt="China travel photo by Emily Blakeman"></figure>
+        <figure class="gallery-art-card"><img class="gallery-art-img" src="Travel & Inspiration/Hawaii.webp" alt="Hawaii travel photo by Emily Blakeman"></figure>
+        <figure class="gallery-art-card"><img class="gallery-art-img" src="Travel & Inspiration/Hawaii2.webp" alt="Hawaii travel photo by Emily Blakeman"></figure>
+        <figure class="gallery-art-card"><img class="gallery-art-img" src="Travel & Inspiration/LasVegas.webp" alt="Las Vegas travel photo by Emily Blakeman"></figure>
+        <figure class="gallery-art-card"><img class="gallery-art-img" src="Travel & Inspiration/Mountains.webp" alt="Mountain travel photo by Emily Blakeman"></figure>
+        <figure class="gallery-art-card"><img class="gallery-art-img" src="Travel & Inspiration/Venice.webp" alt="Venice travel photo by Emily Blakeman"></figure>
+      </div>
+    </section>
+  </div>
+</div>
+
 <!-- ════ RESUME ════ -->
 <div class="page" id="page-resume">
   <div class="resume-wrap">
@@ -671,7 +731,7 @@
         <div class="resume-sec">
           <div class="resume-sec-title">Education</div>
           <div class="exp">
-            <div class="exp-head"><div class="exp-role">BS � Informatics, Human-Computer Interaction</div><div class="exp-date">Graduated Dec 2023</div></div>
+            <div class="exp-head"><div class="exp-role">BS - Informatics, Human-Computer Interaction</div><div class="exp-date">Graduated Dec 2023</div></div>
             <div class="exp-co">University of Washington, Seattle</div>
             <ul class="exp-list"><li>WA State Opportunity Scholar, Vancouver Rotary Scholar, Senior Citizenship Award Recipient</li></ul>
           </div>
@@ -679,18 +739,18 @@
         <div class="resume-sec">
           <div class="resume-sec-title">Experience</div>
           <div class="exp">
-            <div class="exp-head"><div class="exp-role">Co-Founder & Head of Design</div><div class="exp-date">Dec 2024 � Present</div></div>
-            <div class="exp-co">Inflerra � Redmond, WA</div>
+            <div class="exp-head"><div class="exp-role">Co-Founder & Head of Design</div><div class="exp-date">Dec 2024 - Present</div></div>
+            <div class="exp-co">Inflerra - Redmond, WA</div>
             <ul class="exp-list">
               <li>Co-founded and led end-to-end UX/UI for a gamified AI-powered influencer-brand matchmaking platform.</li>
-              <li>Built visual design system from scratch � brand identity, UI components, iconography.</li>
+              <li>Built visual design system from scratch - brand identity, UI components, iconography.</li>
               <li>Designed all core workflows: onboarding, campaign creation, matchmaking, analytics dashboards.</li>
               <li>Collaborated with product and engineering to define MVP scope and Q4 launch.</li>
             </ul>
           </div>
           <div class="exp">
-            <div class="exp-head"><div class="exp-role">UI / UX Designer II</div><div class="exp-date">Dec 2023 � Dec 2025</div></div>
-            <div class="exp-co">Genemod � Seattle, WA</div>
+            <div class="exp-head"><div class="exp-role">UI / UX Designer II</div><div class="exp-date">Dec 2023 - Dec 2025</div></div>
+            <div class="exp-co">Genemod - Seattle, WA</div>
             <ul class="exp-list">
               <li>Led design for core SaaS features used by 150+ biotech and academic labs across U.S. and Europe.</li>
               <li>Designed cross-platform workflows supporting 1M+ R&amp;D activities.</li>
@@ -701,16 +761,16 @@
             </ul>
           </div>
           <div class="exp">
-            <div class="exp-head"><div class="exp-role">UI / UX Designer & User Researcher</div><div class="exp-date">Sept 2022 � June 2023</div></div>
-            <div class="exp-co">City of Seattle � Seattle, WA</div>
+            <div class="exp-head"><div class="exp-role">UI / UX Designer & User Researcher</div><div class="exp-date">Sept 2022 - June 2023</div></div>
+            <div class="exp-co">City of Seattle - Seattle, WA</div>
             <ul class="exp-list">
-              <li>Designed a hybrid physical-digital board game teaching civic budgeting � part of a $3M initiative.</li>
+              <li>Designed a hybrid physical-digital board game teaching civic budgeting - part of a $3M initiative.</li>
               <li>Led user research and usability testing with families to optimize engagement and learning outcomes.</li>
             </ul>
           </div>
           <div class="exp">
-            <div class="exp-head"><div class="exp-role">Graphic Design & Social Media Intern</div><div class="exp-date">Aug � Nov 2022</div></div>
-            <div class="exp-co">Fast Startup � Seattle, WA</div>
+            <div class="exp-head"><div class="exp-role">Graphic Design & Social Media Intern</div><div class="exp-date">Aug - Nov 2022</div></div>
+            <div class="exp-co">Fast Startup - Seattle, WA</div>
             <ul class="exp-list">
               <li>Developed data-driven visual content contributing to increased organic reach.</li>
               <li>Applied A/B testing to refine visual assets based on interaction analytics.</li>
@@ -722,11 +782,19 @@
         <div class="resume-pane">
           <div class="resume-sec-title">Skills & Tools</div>
           <div class="resume-skill-list">
+            <div class="resume-skill-group ai-tools"><h4>AI Tools</h4><p>Figma AI, Claude, Cursor, Codex, Visual Studio Code</p></div>
             <div class="resume-skill-group"><h4>Design</h4><p>UX/UI, Interaction, Accessible Design, Visual Design, Wireframing, Prototyping, Design Systems</p></div>
             <div class="resume-skill-group"><h4>Research</h4><p>User Interviews, Usability Testing, Journey Mapping, A/B Testing, Competitor Analysis, IA</p></div>
             <div class="resume-skill-group"><h4>Software</h4><p>Figma, Sketch, Miro, Photoshop, Illustrator, AfterEffects, Procreate, HTML, CSS</p></div>
-            <div class="resume-skill-group"><h4>AI Tools</h4><p>Figma AI, Claude, Cursur, Codex, Visual Studio Code</p></div>
             <div class="resume-skill-group"><h4>Other</h4><p>Chinese Fluency, Cross-functional Collaboration, Rapid Iteration, Human-Centered Design</p></div>
+          </div>
+        </div>
+        <div class="resume-pane">
+          <div class="resume-sec-title">Honors & Awards</div>
+          <div class="resume-awards-list">
+            <div class="resume-award-item">WA State Opportunity Scholar</div>
+            <div class="resume-award-item">Vancouver Rotary Scholar</div>
+            <div class="resume-award-item">Senior Citizenship Award Recipient</div>
           </div>
         </div>
       </div>
@@ -734,24 +802,24 @@
   </div>
 </div>
 
-<!-- ---- CONTACT ════ -->
+<!-- ---- CONTACT ---- -->
 <div class="page" id="page-contact">
   <div class="contact-wrap">
     <div>
       <h2 class="contact-heading">Let's build something <span class="grad">great</span> together.</h2>
       <p class="contact-sub">Open to new projects, collaborations, or just a good conversation about design.</p>
       <div class="contact-links">
-        <a class="c-link" href="https://maps.google.com/?q=Seattle,+WA" target="_blank"><div class="c-link-icon">📍</div><div class="c-link-text">Seattle, WA</div></a>
-        <a class="c-link" href="mailto:eblakeman6008@gmail.com"><div class="c-link-icon">✉️</div><div class="c-link-text">eblakeman6008@gmail.com</div></a>
-        <a class="c-link" href="https://linkedin.com/in/eblakeman" target="_blank"><div class="c-link-icon">💼</div><div class="c-link-text">linkedin.com/in/eblakeman</div></a>
+        <a class="c-link" href="https://maps.google.com/?q=Seattle,+WA" target="_blank"><div class="c-link-icon">&#128205;</div><div class="c-link-text">Seattle, WA</div></a>
+        <a class="c-link" href="mailto:eblakeman6008@gmail.com"><div class="c-link-icon">&#9993;&#65039;</div><div class="c-link-text">eblakeman6008@gmail.com</div></a>
+        <a class="c-link" href="https://linkedin.com/in/eblakeman" target="_blank"><div class="c-link-icon">&#128188;</div><div class="c-link-text">linkedin.com/in/eblakeman</div></a>
       </div>
     </div>
     <div class="cf">
-      <div class="cf-group"><label class="cf-label">Your Name</label><input class="cf-input" type="text" placeholder="Jane Smith" id="fn"></div>
-      <div class="cf-group"><label class="cf-label">Email</label><input class="cf-input" type="email" placeholder="jane@company.com" id="fe"></div>
-      <div class="cf-group"><label class="cf-label">Message</label><textarea class="cf-textarea" placeholder="Tell me about your project or just say hi..." id="fm"></textarea></div>
-      <button class="cf-submit" onclick="sendMsg()">Send Message ✨</button>
-      <div class="cf-success" id="cf-ok">Thank you for contacting me! I will be in touch soon ✨</div>
+            <div class="cf-group"><label class="cf-label" for="fn">Your Name <span class="cf-error" id="fn-error" aria-live="polite"></span></label><input class="cf-input" type="text" placeholder="Jane Smith" id="fn"></div>
+      <div class="cf-group"><label class="cf-label" for="fe">Your Email <span class="cf-error" id="fe-error" aria-live="polite"></span></label><input class="cf-input" type="email" placeholder="jane@company.com" id="fe"></div>
+      <div class="cf-group"><label class="cf-label" for="fm">Your Message <span class="cf-error" id="fm-error" aria-live="polite"></span></label><textarea class="cf-textarea" placeholder="Tell me about your project or just say hi..." id="fm"></textarea></div>
+      <button class="cf-submit" onclick="sendMsg()">Send Message &#10024;</button>
+      <div class="cf-success" id="cf-ok">Thank you for contacting me! I will be in touch soon &#10024;</div>
     </div>
   </div>
 </div>
@@ -762,4 +830,6 @@
 <script src="script.js"></script>
 </body>
 </html>
+
+
 
