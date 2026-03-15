@@ -249,3 +249,46 @@ function sendMsg(prefix = '') {
   });
   scheduleUpdate();
 })();
+
+(function() {
+  const lightbox = document.getElementById('gallery-lightbox');
+  const lightboxImg = document.getElementById('gallery-lightbox-img');
+  const backdrop = document.getElementById('gallery-lightbox-backdrop');
+  const closeBtn = document.getElementById('gallery-lightbox-close');
+  const galleryImages = document.querySelectorAll('#page-gallery .gallery-art-img');
+  if (!lightbox || !lightboxImg || !backdrop || !galleryImages.length) return;
+
+  function openLightbox(src, alt) {
+    lightboxImg.src = src;
+    lightboxImg.alt = alt || '';
+    lightbox.hidden = false;
+    document.body.classList.add('gallery-lightbox-open');
+  }
+
+  function closeLightbox() {
+    lightbox.hidden = true;
+    lightboxImg.removeAttribute('src');
+    lightboxImg.alt = '';
+    document.body.classList.remove('gallery-lightbox-open');
+  }
+
+  galleryImages.forEach((img) => {
+    img.addEventListener('click', function() {
+      openLightbox(img.getAttribute('src'), img.getAttribute('alt'));
+    });
+  });
+
+  backdrop.addEventListener('click', closeLightbox);
+  lightboxImg.addEventListener('click', function(event) {
+    event.stopPropagation();
+  });
+  if (closeBtn) {
+    closeBtn.addEventListener('click', closeLightbox);
+  }
+
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape' && !lightbox.hidden) {
+      closeLightbox();
+    }
+  });
+})();
