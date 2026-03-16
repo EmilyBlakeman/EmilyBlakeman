@@ -2075,3 +2075,304 @@ body.gallery-lightbox-open {
   margin-left: auto;
   margin-right: auto;
 }
+
+
+#cs-genemod .cs-band {
+  text-align: center;
+}
+#cs-genemod .cs-kicker,
+#cs-genemod .cs-meta-row {
+  justify-content: center;
+}
+#cs-genemod .cs-band > div {
+  margin-top: 0 !important;
+}
+
+
+#cs-genemod .genemod-band {
+  background: transparent;
+}
+#cs-genemod .genemod-band-inner {
+  margin-top: 12px !important;
+}
+#cs-genemod .cs-sub {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+#cs-genemod .genemod-hero-devices {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 10px var(--page-side) 34px;
+  display: grid;
+  grid-template-columns: .72fr 2.08fr .6fr;
+  align-items: end;
+  justify-items: center;
+  gap: 28px;
+}
+#cs-genemod .genemod-device {
+  margin: 0;
+}
+#cs-genemod .genemod-device img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+#cs-genemod .genemod-device-ipad {
+  max-width: 196px;
+}
+#cs-genemod .genemod-device-laptop {
+  max-width: 720px;
+}
+#cs-genemod .genemod-device-mobile {
+  max-width: 138px;
+}
+@media(max-width: 900px) {
+  #cs-genemod .genemod-hero-devices {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding-top: 0;
+  }
+  #cs-genemod .genemod-device-ipad,
+  #cs-genemod .genemod-device-laptop,
+  #cs-genemod .genemod-device-mobile {
+    max-width: min(100%, 520px);
+  }
+}
+
+
+#cs-genemod .cs-h1 {
+  color: #2f66d6;
+}
+#cs-genemod .cs-meta-pill-label {
+  color: #2f66d6 !important;
+}
+#cs-genemod .cs-meta-pill-value {
+  font-weight: 500;
+}
+
+
+#cs-genemod .genemod-band-inner {
+  margin-top: 12px !important;
+}
+#cs-genemod .cs-h1 {
+  color: #2f66d6 !important;
+}
+#cs-genemod .cs-meta-pill-label {
+  color: #2f66d6 !important;
+}
+#cs-genemod .genemod-hero-devices {
+  grid-template-columns: .72fr 2.08fr .6fr;
+}
+#cs-genemod .genemod-device-ipad {
+  max-width: 196px;
+}
+#cs-genemod .genemod-device-mobile {
+  max-width: 138px;
+}
+
+
+#cs-genemod .genemod-meta-row {
+  max-width: var(--max-w);
+  margin: 8px auto 0;
+  padding: 0 var(--page-side) 18px;
+  justify-content: center;
+}
+#cs-genemod .genemod-device-laptop {
+  max-width: 664px;
+}
+#cs-genemod .genemod-device-mobile {
+  max-width: 124px;
+}
+#cs-genemod .genemod-key-contrib {
+  margin-top: 26px;
+}
+#cs-genemod .genemod-key-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  line-height: 1.2;
+  margin: 0 0 18px;
+}
+#cs-genemod .genemod-key-list {
+  list-style: disc;
+  padding-left: 22px;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px 28px;
+}
+#cs-genemod .genemod-key-list li {
+  color: var(--ink2);
+  line-height: 1.7;
+  padding-left: 2px;
+}
+@media(max-width: 768px) {
+  #cs-genemod .genemod-key-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+#cs-genemod .cs-band {
+  padding-top: 78px;
+}
+#cs-genemod .genemod-meta-row {
+  margin: 18px auto 6px;
+  padding-bottom: 8px;
+}
+#cs-genemod .genemod-device-laptop {
+  max-width: 628px;
+}
+
+
+#cs-genemod .cs-stats {
+  margin: 40px 0 38px;
+}
+#cs-genemod .genemod-key-contrib {
+  margin-top: 34px;
+}
+#cs-genemod .genemod-meta-row {
+  margin: 10px auto 22px;
+  padding-bottom: 0;
+}
+
+
+#cs-genemod .genemod-meta-row {
+  margin: 4px auto 34px;
+}
+
+
+#cs-genemod .genemod-meta-row {
+  margin: 0 auto 52px;
+}
+#cs-genemod .genemod-challenge-subhead {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.24rem;
+  line-height: 1.25;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+
+#cs-genemod .genemod-meta-row {
+  margin: 0 auto 68px;
+}
+#cs-genemod .genemod-step-content p + p {
+  margin-top: 14px;
+}
+#cs-genemod .genemod-step-subhead {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  line-height: 1.25;
+  margin: 18px 0 12px;
+}
+#cs-genemod .genemod-step-list {
+  margin: 0 0 24px 20px;
+  padding: 0;
+}
+#cs-genemod .genemod-step-list li + li {
+  margin-top: 10px;
+}
+#cs-genemod .genemod-inline-image {
+  margin: 24px 0 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: 0 10px 30px rgba(15, 23, 42, .08);
+}
+#cs-genemod .genemod-inline-image img {
+  width: 100%;
+  display: block;
+}
+
+
+#cs-genemod .genemod-inline-image {
+  max-width: 50%;
+  margin: 24px auto 0;
+}
+#cs-genemod .genemod-inline-image-large {
+  max-width: 68%;
+}
+@media(max-width: 768px) {
+  #cs-genemod .genemod-inline-image {
+    max-width: 100%;
+  }
+}
+
+#cs-genemod .genemod-band {
+  padding-bottom: 24px;
+}
+#cs-genemod .genemod-meta-row {
+  margin: 0 auto 68px;
+}
+#cs-genemod .genemod-approach-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 280px;
+  gap: 24px;
+  align-items: start;
+  margin-bottom: 8px;
+}
+#cs-genemod .genemod-approach-main {
+  min-width: 0;
+}
+#cs-genemod .genemod-step-list {
+  margin: 0 0 24px 20px;
+  padding: 0;
+}
+#cs-genemod .genemod-step-list li {
+  font-size: .88rem;
+  color: var(--ink2);
+  line-height: 1.75;
+  font-weight: 400;
+}
+#cs-genemod .genemod-step-list-plain li strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+#cs-genemod .genemod-impact-callout {
+  background: linear-gradient(180deg, rgba(61, 124, 255, .08), rgba(61, 124, 255, .03));
+  border: 1px solid rgba(61, 124, 255, .18);
+  border-radius: var(--radius-sm);
+  padding: 18px 18px 16px;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, .06);
+}
+#cs-genemod .genemod-impact-callout h5 {
+  font-size: .84rem;
+  line-height: 1.45;
+  font-weight: 700;
+  color: var(--ink);
+  margin: 0 0 8px;
+}
+#cs-genemod .genemod-impact-callout p {
+  font-size: .84rem;
+  line-height: 1.65;
+  color: var(--ink2);
+  margin: 0;
+}
+#cs-genemod .genemod-research-2img {
+  max-width: 860px;
+  margin: 28px auto 0;
+  align-items: stretch;
+}
+#cs-genemod .genemod-research-2img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+#cs-genemod .genemod-workflow-images {
+  grid-template-columns: 1fr;
+  max-width: 1400px;
+  gap: 28px;
+}
+#cs-genemod .genemod-workflow-images img {
+  min-height: 0;
+  aspect-ratio: 16 / 5;
+  object-fit: contain;
+  background: #fff;
+}
+@media(max-width: 900px) {
+  #cs-genemod .genemod-approach-layout {
+    grid-template-columns: 1fr;
+  }
+}
