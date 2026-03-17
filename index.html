@@ -631,64 +631,149 @@
 
 <!-- ════ CASE STUDY: AROUND TOWN ════ -->
 <div class="case-study" id="cs-aroundtown">
-  <div class="cs-band" style="background:linear-gradient(135deg,#fffde7,#fff8e1)">
-    <button class="cs-back" onclick="showPage('home')">← Back to Work</button>
-    <div style="margin-top:28px">
-      <div class="cs-kicker" style="color:#f57f17">
-        <span style="width:20px;height:1.5px;background:linear-gradient(90deg,#ffbe0b,#f7567c);display:inline-block"></span>
-        Mobile · UX Research · Civic Tech
-      </div>
+  <div class="cs-band aroundtown-band">
+    <div class="aroundtown-band-inner">
       <h1 class="cs-h1">Around Town</h1>
-      <p class="cs-sub">An app empowering small, locally owned businesses — a community-driven resource supporting outreach and sales throughout the Covid-19 pandemic.</p>
-      <div class="cs-meta-row">
-        <div class="cs-meta-pill"><div class="cs-meta-pill-label" style="color:#f57f17">Role</div><div class="cs-meta-pill-value">Project Manager, Designer</div></div>
-        <div class="cs-meta-pill"><div class="cs-meta-pill-label" style="color:#f57f17">Team</div><div class="cs-meta-pill-value">E. Blakeman · M. Luu · S. Huang · K. Dao</div></div>
-        <div class="cs-meta-pill"><div class="cs-meta-pill-label" style="color:#f57f17">Type</div><div class="cs-meta-pill-value">Mobile App Design</div></div>
-      </div>
+      <p class="cs-sub">A community-driven mobile app helping small, locally owned businesses gain visibility, engagement, and support during the COVID-19 pandemic.</p>
     </div>
   </div>
-  <div class="cs-hero-placeholder" style="background:linear-gradient(135deg,#fff8e1,#ffecb3)">🏘️</div>
+  <div class="cs-meta-row aroundtown-meta-row">
+    <div class="cs-meta-pill"><div class="cs-meta-pill-label" style="color:#2365ca">Role</div><div class="cs-meta-pill-value">Project Manager, Designer</div></div>
+    <div class="cs-meta-pill"><div class="cs-meta-pill-label" style="color:#2365ca">Team</div><div class="cs-meta-pill-value">Emily Blakeman · Megan Luu · Sarah Huang · Kristine Dao</div></div>
+    <div class="cs-meta-pill"><div class="cs-meta-pill-label" style="color:#2365ca">Type</div><div class="cs-meta-pill-value">Mobile App Design</div></div>
+  </div>
+  <figure class="aroundtown-hero-image">
+    <img src="CaseStudies/AroundTown/AroundTown.webp" alt="Around Town app overview">
+  </figure>
   <div class="cs-body">
     <div class="cs-section reveal">
       <div class="cs-section-num">01</div>
       <div class="cs-section-title">Overview</div>
-      <p class="cs-p">Due to Covid-19, many small businesses struggled or shut down. As restrictions tightened and capacity limits reduced foot traffic, these businesses — and the families that depend on them — faced serious hardship.</p>
-      <div class="cs-quote">"To support one's community is to support the people that helped shape everything around you." — Emily Blakeman</div>
-      <p class="cs-p"><strong>Goal:</strong> A platform that encourages community members to support local businesses through incentives, bios, reviews, and location services.</p>
+      <p class="cs-p">Around Town was created during the COVID-19 pandemic to help small, locally owned businesses stay visible and connected to their communities at a time when foot traffic, revenue, and business stability were under pressure.</p>
+      <p class="cs-p">The app was geared toward <strong>serving and empowering small, locally owned businesses</strong> by creating a resource that would allow consumers to easily discover businesses, support outreach and sales, and stay engaged with the places they care about most.</p>
+      <div class="cs-quote">&ldquo;To support one&rsquo;s community is to support the people that helped shape everything around you.&rdquo;</div>
+      <div class="aroundtown-stat-row">
+        <div class="aroundtown-stat-card"><div class="n">4</div><div class="l">Team members</div></div>
+        <div class="aroundtown-stat-card"><div class="n">2</div><div class="l">Primary audiences</div></div>
+        <div class="aroundtown-stat-card"><div class="n">0&rarr;1</div><div class="l">Concept-to-interface build</div></div>
+      </div>
     </div>
     <div class="cs-section reveal">
       <div class="cs-section-num">02</div>
-      <div class="cs-section-title">Core Features</div>
-      <div class="cs-2col">
-        <div class="cs-card"><div class="cs-card-label" style="color:var(--g5)">Search</div><p>Category filters (food, clothing, online stores). Friend search adds social discovery to local business finding.</p></div>
-        <div class="cs-card"><div class="cs-card-label" style="color:var(--g4)">Promotions</div><p>Businesses list their own deals — from percentage discounts to punch card rewards. Users see what's nearby at a glance.</p></div>
+      <div class="cs-section-title">The Problem</div>
+      <p class="cs-p">Due to the COVID-19 pandemic, many small businesses were struggling or shutting down because of reduced customers, tighter restrictions, and capacity limits. As those constraints increased, the survival of local businesses became harder and harder.</p>
+      <p class="cs-p">That pressure affected not only individual owners, but also the families and local economies that depended on those businesses staying open.</p>
+      <p class="cs-p">With the need for financial stability and visibility becoming more urgent, we wanted to design a solution that could help small businesses stay active, gain recognition in the community, and create stronger incentives for people to shop locally.</p>
+      <div class="aroundtown-goal-card">
+        <div class="cs-card-label" style="color:#2365ca">Goal</div>
+        <p>Create a platform that encourages users to support small and locally owned businesses through incentives such as discounts, along with bios, reviews, and location services to support those struggling through the pandemic.</p>
       </div>
-      <div class="cs-card" style="margin-top:14px"><div class="cs-card-label" style="color:var(--g2)">Social</div><p>Follow friends and see their reviews in a news feed. Social proof motivates users to visit businesses their community loves.</p></div>
     </div>
     <div class="cs-section reveal">
       <div class="cs-section-num">03</div>
-      <div class="cs-section-title">Design Process</div>
-      <p class="cs-p">We moved through structured phases — starting with low-fidelity wireframes to explore structure and flows, then into a high-fidelity design system with a cohesive visual language built around trust and accessibility.</p>
-      <div class="cs-h4">Style Guide</div>
-      <div class="cs-chips">
-        <span class="cs-chip" style="background:#4A75E4;color:white;border-color:#4A75E4">#4A75E4 — Primary Blue</span>
-        <span class="cs-chip" style="background:#ECDA9B;color:#5a4500;border-color:#d4b800">#ECDA9B — Warm Yellow</span>
-        <span class="cs-chip" style="background:#A5C9FF;color:#003780;border-color:#7eadee">#A5C9FF — Sky Blue</span>
+      <div class="cs-section-title">Core Features</div>
+      <p class="cs-p">The product centered on features that could help both users and businesses connect more easily, discover nearby opportunities, and build social motivation around supporting local commerce.</p>
+      <div class="cs-2col aroundtown-feature-grid">
+        <div class="cs-card aroundtown-feature-card">
+          <div class="cs-card-label" style="color:#2365ca">Search</div>
+          <p>Users can look for small businesses through category-based search such as food, clothing, and online stores. The experience also supports finding friends within the app to add a social layer to discovery.</p>
+        </div>
+        <div class="cs-card aroundtown-feature-card">
+          <div class="cs-card-label" style="color:#2365ca">Promotions</div>
+          <p>Users can view promotions from businesses in their area, helping them quickly see which places are offering deals and discounts. Businesses can choose whether to offer promotions and define what those promotions look like, from percentage discounts to punch card rewards.</p>
+        </div>
       </div>
-      <p class="cs-p">The high-fidelity design covered onboarding, account creation, search, business profiles, reviews, social feeds, promotions, and personalized settings.</p>
+      <div class="cs-card aroundtown-feature-card" style="margin-top:14px">
+        <div class="cs-card-label" style="color:#2365ca">Social</div>
+        <p>Users can follow friends and other community members, then see their reviews in a feed. This social proof helps surface trusted recommendations and encourages more people to support the businesses their community already values.</p>
+      </div>
     </div>
     <div class="cs-section reveal">
       <div class="cs-section-num">04</div>
+      <div class="cs-section-title">Low-Fidelity Exploration</div>
+      <p class="cs-p">We used low-fidelity wireframes to define structure, clarify the core experience, and map the most important user flows before moving into visual polish. This phase helped us pressure-test information hierarchy and feature scope early.</p>
+      <div class="aroundtown-gallery aroundtown-gallery-lowfi">
+        <figure class="aroundtown-gallery-item"><img src="CaseStudies/AroundTown/Lowfi1.webp" alt="Around Town low-fidelity wireframe one"></figure>
+        <figure class="aroundtown-gallery-item"><img src="CaseStudies/AroundTown/Lowfi2.webp" alt="Around Town low-fidelity wireframe two"></figure>
+        <figure class="aroundtown-gallery-item"><img src="CaseStudies/AroundTown/Lowfi3.webp" alt="Around Town low-fidelity wireframe three"></figure>
+        <figure class="aroundtown-gallery-item"><img src="CaseStudies/AroundTown/Lowfi4.webp" alt="Around Town low-fidelity wireframe four"></figure>
+        <figure class="aroundtown-gallery-item"><img src="CaseStudies/AroundTown/Lowfi5.webp" alt="Around Town low-fidelity wireframe five"></figure>
+        <figure class="aroundtown-gallery-item"><img src="CaseStudies/AroundTown/Lowfi6.webp" alt="Around Town low-fidelity wireframe six"></figure>
+        <figure class="aroundtown-gallery-item"><img src="CaseStudies/AroundTown/Lowfi7.webp" alt="Around Town low-fidelity wireframe seven"></figure>
+        <figure class="aroundtown-gallery-item"><img src="CaseStudies/AroundTown/Lowfi8.webp" alt="Around Town low-fidelity wireframe eight"></figure>
+      </div>
+      <p class="cs-caption">Low-fidelity wireframes exploring the app structure, navigation, and early feature direction.</p>
+    </div>
+    <div class="cs-section reveal">
+      <div class="cs-section-num">05</div>
+      <div class="cs-section-title">Visual Direction</div>
+      <p class="cs-p">The visual system was designed to feel approachable, trustworthy, and easy to read. We wanted colors that conveyed trust while still standing out against a white background, paired with a clean font system that stayed accessible across screens.</p>
+      <div class="cs-h4">Style Guide</div>
+      <div class="cs-chips aroundtown-style-chips">
+        <span class="cs-chip" style="background:#4A75E4;color:white;border-color:#4A75E4">#4A75E4 &mdash; Primary Blue</span>
+        <span class="cs-chip" style="background:#ECDA9B;color:#5a4500;border-color:#d4b800">#ECDA9B &mdash; Warm Yellow</span>
+        <span class="cs-chip" style="background:#A5C9FF;color:#003780;border-color:#7eadee">#A5C9FF &mdash; Sky Blue</span>
+      </div>
+      <div class="aroundtown-font-card">
+        <div class="cs-card-label" style="color:#2365ca">Fonts</div>
+        <div class="aroundtown-font-list">
+          <span>Open Sans Light</span>
+          <span>Open Sans Normal</span>
+          <span>Open Sans SemiBold</span>
+          <span>Open Sans Bold</span>
+        </div>
+      </div>
+      <ul class="cs-ul">
+        <li>Easy, clear-to-read typography for a wide range of users</li>
+        <li>Colors that represent trust yet maintain contrast against a white interface</li>
+      </ul>
+    </div>
+    <div class="cs-section reveal">
+      <div class="cs-section-num">06</div>
+      <div class="cs-section-title">High-Fidelity Design</div>
+      <p class="cs-p">The high-fidelity work translated the concept into a fuller mobile product experience, including onboarding, account creation, search, business profiles, reviews, promotions, social feeds, and settings. The goal was to make local business discovery feel useful, social, and actionable.</p>
+      <div class="aroundtown-gallery aroundtown-gallery-hifi">
+        <figure class="aroundtown-gallery-item"><img src="CaseStudies/AroundTown/Hifi1.webp" alt="Around Town high-fidelity screen one"></figure>
+        <figure class="aroundtown-gallery-item"><img src="CaseStudies/AroundTown/Hifi2.webp" alt="Around Town high-fidelity screen two"></figure>
+        <figure class="aroundtown-gallery-item"><img src="CaseStudies/AroundTown/Hifi3.webp" alt="Around Town high-fidelity screen three"></figure>
+        <figure class="aroundtown-gallery-item"><img src="CaseStudies/AroundTown/Hifi4.webp" alt="Around Town high-fidelity screen four"></figure>
+        <figure class="aroundtown-gallery-item"><img src="CaseStudies/AroundTown/Hifi5.webp" alt="Around Town high-fidelity screen five"></figure>
+        <figure class="aroundtown-gallery-item"><img src="CaseStudies/AroundTown/Hifi6.webp" alt="Around Town high-fidelity screen six"></figure>
+        <figure class="aroundtown-gallery-item"><img src="CaseStudies/AroundTown/Hifi7.webp" alt="Around Town high-fidelity screen seven"></figure>
+        <figure class="aroundtown-gallery-item"><img src="CaseStudies/AroundTown/Hifi8.webp" alt="Around Town high-fidelity screen eight"></figure>
+        <figure class="aroundtown-gallery-item"><img src="CaseStudies/AroundTown/Hifi9.webp" alt="Around Town high-fidelity screen nine"></figure>
+        <figure class="aroundtown-gallery-item"><img src="CaseStudies/AroundTown/Hifi10.webp" alt="Around Town high-fidelity screen ten"></figure>
+        <figure class="aroundtown-gallery-item"><img src="CaseStudies/AroundTown/Hifi11.webp" alt="Around Town high-fidelity screen eleven"></figure>
+        <figure class="aroundtown-gallery-item"><img src="CaseStudies/AroundTown/Hifi12.webp" alt="Around Town high-fidelity screen twelve"></figure>
+        <figure class="aroundtown-gallery-item"><img src="CaseStudies/AroundTown/Hifi13.webp" alt="Around Town high-fidelity screen thirteen"></figure>
+        <figure class="aroundtown-gallery-item"><img src="CaseStudies/AroundTown/Hifi14.webp" alt="Around Town high-fidelity screen fourteen"></figure>
+        <figure class="aroundtown-gallery-item"><img src="CaseStudies/AroundTown/Hifi15.webp" alt="Around Town high-fidelity screen fifteen"></figure>
+        <figure class="aroundtown-gallery-item"><img src="CaseStudies/AroundTown/Hifi16.webp" alt="Around Town high-fidelity screen sixteen"></figure>
+        <figure class="aroundtown-gallery-item"><img src="CaseStudies/AroundTown/Hifi17.webp" alt="Around Town high-fidelity screen seventeen"></figure>
+        <figure class="aroundtown-gallery-item"><img src="CaseStudies/AroundTown/Hifi18.webp" alt="Around Town high-fidelity screen eighteen"></figure>
+        <figure class="aroundtown-gallery-item"><img src="CaseStudies/AroundTown/Hifi19.webp" alt="Around Town high-fidelity screen nineteen"></figure>
+        <figure class="aroundtown-gallery-item"><img src="CaseStudies/AroundTown/Hifi20.webp" alt="Around Town high-fidelity screen twenty"></figure>
+      </div>
+      <p class="cs-caption">High-fidelity mobile screens covering onboarding, browsing, reviews, promotions, settings, and community interactions.</p>
+    </div>
+    <div class="cs-section reveal">
+      <div class="cs-section-num">07</div>
       <div class="cs-section-title">Key User Flows</div>
       <ul class="cs-ul">
-        <li>Get onboarded as a consumer or business user</li>
+        <li>Create an account based on whether you are a business or a consumer</li>
         <li>Search and discover local businesses by category</li>
         <li>View business profiles with reviews and hours</li>
-        <li>Create and post reviews to earn points</li>
-        <li>Browse and activate promotions and deals</li>
-        <li>Socialize with friends, view their recommendations</li>
+        <li>Create and post reviews, then browse your review history</li>
+        <li>Browse and activate promotions and local deals</li>
+        <li>Follow friends and view community recommendations in a social feed</li>
         <li>Personalize settings for content and visibility</li>
       </ul>
+    </div>
+    <div class="cs-section reveal">
+      <div class="cs-section-num">08</div>
+      <div class="cs-section-title">Reflection</div>
+      <p class="cs-p">Around Town taught me how product design can respond to urgent real-world conditions with a balance of empathy, clarity, and practical incentives. It also strengthened my ability to work across project management, interaction design, and collaborative product thinking within a small team.</p>
+      <p class="cs-p">This project taught me how to shape a user-centered concept from the ground up, organize a team around a meaningful problem, and move from low-fidelity exploration to a polished mobile experience with a clear feature strategy and visual system.</p>
     </div>
   </div>
   <div class="cs-other">
@@ -707,69 +792,160 @@
 
 <!-- ════ CASE STUDY: ALUMNIFY ════ -->
 <div class="case-study" id="cs-alumnify">
-  <div class="cs-band" style="background:linear-gradient(135deg,#f3e5f5,#ede7f6)">
-    <button class="cs-back" onclick="showPage('home')">← Back to Work</button>
-    <div style="margin-top:28px">
-      <div class="cs-kicker" style="color:#7b1fa2">
-        <span style="width:20px;height:1.5px;background:linear-gradient(90deg,#9c27b0,#3a86ff);display:inline-block"></span>
-        Web Design · UX Research · SaaS
-      </div>
+  <div class="cs-band alumnify-band">
+    <div class="alumnify-band-inner">
       <h1 class="cs-h1">Alumnify</h1>
-      <p class="cs-sub">A web application facilitating networking, mentorship, and career development between alumni and students through mutual interests and community groups.</p>
-      <div class="cs-meta-row">
-        <div class="cs-meta-pill"><div class="cs-meta-pill-label" style="color:#7b1fa2">Role</div><div class="cs-meta-pill-value">UX/UI Designer</div></div>
-        <div class="cs-meta-pill"><div class="cs-meta-pill-label" style="color:#7b1fa2">Timeline</div><div class="cs-meta-pill-value">Jan – Mar 2023</div></div>
-        <div class="cs-meta-pill"><div class="cs-meta-pill-label" style="color:#7b1fa2">Team</div><div class="cs-meta-pill-value">E. Blakeman · E. Eckey · E. Yu · K. Dao</div></div>
-      </div>
+      <p class="cs-sub">A web application geared towards assisting alumni and student career development, mentorship, and connection through mutual interests and groups.</p>
     </div>
   </div>
-  <div class="cs-hero-placeholder" style="background:linear-gradient(135deg,#ede7f6,#d1c4e9)">🎓</div>
+  <div class="cs-meta-row alumnify-meta-row">
+    <div class="cs-meta-pill"><div class="cs-meta-pill-label">Role</div><div class="cs-meta-pill-value">UX/UI Designer</div></div>
+    <div class="cs-meta-pill"><div class="cs-meta-pill-label">Timeline</div><div class="cs-meta-pill-value">January &ndash; March 2023</div></div>
+    <div class="cs-meta-pill"><div class="cs-meta-pill-label">Team</div><div class="cs-meta-pill-value">Emily Blakeman &middot; Emily Eckey &middot; Emily Yu</div></div>
+  </div>
+  <div class="alumnify-hero-media">
+    <figure class="alumnify-hero-panel alumnify-hero-panel-center">
+      <img src="CaseStudies/Alumnify/Desktop.webp" alt="Alumnify desktop application concept">
+    </figure>
+  </div>
   <div class="cs-body">
     <div class="cs-section reveal">
       <div class="cs-section-num">01</div>
       <div class="cs-section-title">Overview</div>
-      <p class="cs-p">Alumnify facilitates <strong>networking and engagement</strong> between users through mutual interests and groups — enabling mentorship, career development, and community connection for alumni, students, and university partners.</p>
-      <div class="cs-2col">
-        <div class="cs-card"><div class="cs-card-label" style="color:var(--g1)">Alumni</div><p>Lost connectedness post-graduation — want to stay involved and mentor current students.</p></div>
-        <div class="cs-card"><div class="cs-card-label" style="color:var(--g5)">Students</div><p>Looking for mentorship and employment opportunities as they plan post-university life.</p></div>
+      <p class="cs-p">Alumnify was designed to strengthen the relationship between <strong>alumni, current students, and university stakeholders</strong> through networking, mentorship, shared interests, and community groups.</p>
+      <p class="cs-p">The project focused on building a platform that could support long-term engagement after graduation while also creating clearer pathways for career development, mentorship, and alumni involvement.</p>
+      <div class="cs-quote">Alumnify aims to serve as a platform that facilitates networking and engagement between our users through mutual interests and interest groups to allow the ability to gain more connections and networking opportunities.</div>
+      <div class="alumnify-stat-row">
+        <div class="alumnify-stat-card"><div class="n">3</div><div class="l">Primary user groups</div></div>
+        <div class="alumnify-stat-card"><div class="n">0&rarr;1</div><div class="l">Concept to platform direction</div></div>
+        <div class="alumnify-stat-card"><div class="n">Web</div><div class="l">Responsive product concept</div></div>
       </div>
-      <div class="cs-card" style="margin-top:14px"><div class="cs-card-label" style="color:var(--g3)">University Leadership</div><p>Advisors, partners, and employers who need to understand alumni career paths and identify partnerships.</p></div>
     </div>
     <div class="cs-section reveal">
       <div class="cs-section-num">02</div>
-      <div class="cs-section-title">Research</div>
-      <p class="cs-p">We defined the problem by identifying that alumni lack post-graduation connection pathways, students lack mentorship structures, and university leadership lacks visibility into alumni outcomes.</p>
-      <div class="cs-h4">Synthesis & Ideation</div>
-      <p class="cs-p">Each team member wrote key terms on sticky notes, organized into clusters by category. We voted on the most important factors — ensuring design decisions were grounded in research, not assumption.</p>
+      <div class="cs-section-title">Problem Space &amp; Objective</div>
+      <p class="cs-p">We started by defining a clear gap: <strong>alumni often do not know how to update their information or stay connected with their organization after graduation</strong>. Many also want to mentor students or reconnect with their university community, but lack a dedicated platform to do so.</p>
+      <p class="cs-p">At the same time, students need better access to mentorship and employment opportunities, while university leadership and partners need more visibility into alumni outcomes and stronger ways to foster long-term engagement.</p>
+      <div class="alumnify-goal-card">
+        <div class="cs-card-label">Objective</div>
+        <p>Create a digital platform that helps alumni, students, and university organizations build meaningful relationships through shared interests, mentorship opportunities, groups, and professional networking.</p>
+      </div>
     </div>
     <div class="cs-section reveal">
       <div class="cs-section-num">03</div>
-      <div class="cs-section-title">Design</div>
-      <p class="cs-p">We designed a user-friendly, simplistic, and informative platform covering the full experience — from onboarding through daily social interaction:</p>
-      <ul class="cs-ul">
-        <li>Login and role-based onboarding for alumni, students, and staff</li>
-        <li>User profiles with career history and interests</li>
-        <li>Interest group creation, posting, and event management</li>
-        <li>Private messaging and notification system</li>
-        <li>Search with filters for users and groups</li>
-        <li>Customizable settings for visibility, content, and multimedia</li>
-        <li>University staff views for database and marketing management</li>
-      </ul>
+      <div class="cs-section-title">Research</div>
+      <p class="cs-p">Our research process focused on defining the problem, identifying the people most affected by it, and understanding how the current alumni ecosystem was fragmented across different user groups.</p>
+      <div class="alumnify-stage-grid">
+        <div class="cs-card alumnify-stage-card">
+          <div class="cs-card-label">Stage 1</div>
+          <p><strong>Defining the problem:</strong> alumni lacked simple ways to stay in touch with their organization post-graduation, while students lacked a clear channel for mentorship and career connection.</p>
+        </div>
+        <div class="cs-card alumnify-stage-card">
+          <div class="cs-card-label">Stage 2</div>
+          <p><strong>Identifying key users and stakeholders:</strong> alumni, current students, university partners and employers, advisors, leadership, and affiliates all had different incentives and information needs.</p>
+        </div>
+        <div class="cs-card alumnify-stage-card">
+          <div class="cs-card-label">Stage 3</div>
+          <p><strong>Mapping the current state:</strong> we grouped stakeholders into alumni, students, and organization leadership so we could clarify needs, overlaps, and platform priorities.</p>
+        </div>
+      </div>
+      <div class="cs-h4">Key Stakeholder Groups</div>
+      <div class="alumnify-stakeholder-grid">
+        <div class="cs-card alumnify-stakeholder-card">
+          <div class="cs-card-label">Alumni</div>
+          <p>Interested in staying connected after graduation, mentoring students, and remaining involved with their university community.</p>
+        </div>
+        <div class="cs-card alumnify-stakeholder-card">
+          <div class="cs-card-label">Students</div>
+          <p>Looking for mentorship, career advice, networking opportunities, and stronger connections as they prepare for life after university.</p>
+        </div>
+        <div class="cs-card alumnify-stakeholder-card">
+          <div class="cs-card-label">Organization Leadership</div>
+          <p>Includes advisors, partners, employers, affiliates, and leadership teams who need better visibility into alumni outcomes and partnership opportunities.</p>
+        </div>
+      </div>
     </div>
     <div class="cs-section reveal">
       <div class="cs-section-num">04</div>
+      <div class="cs-section-title">Synthesis &amp; Ideation</div>
+      <p class="cs-p">After gathering initial research, the team synthesized findings through <strong>affinity clustering</strong> to identify the themes that mattered most. Each team member wrote down important Alumnify-related terms on sticky notes, then grouped them into larger categories based on similarity and relevance.</p>
+      <p class="cs-p">We then voted on the categories and ideas we believed were most important to carry into the design phase. This allowed us to ground feature decisions in a shared understanding of user needs rather than assumption.</p>
+      <div class="cs-2col alumnify-ideation-grid">
+        <figure class="alumnify-inline-image">
+          <img src="CaseStudies/Alumnify/Affinityclustering.webp" alt="Alumnify affinity clustering exercise">
+        </figure>
+        <div class="alumnify-highlight-card">
+          <div class="cs-card-label">Design Priorities</div>
+          <ul class="cs-ul alumnify-tight-list">
+            <li>Surface mentorship and networking opportunities more clearly</li>
+            <li>Build around shared interests and group participation</li>
+            <li>Support both alumni and student-specific goals without fragmenting the product</li>
+            <li>Create a system that university leadership could also use for engagement and insight</li>
+          </ul>
+        </div>
+      </div>
+      <figure class="alumnify-inline-image alumnify-inline-image-wide alumnify-inline-image-feature">
+        <img src="CaseStudies/Alumnify/keyfeatures.webp" alt="Alumnify key feature planning board">
+      </figure>
+    </div>
+    <div class="cs-section reveal">
+      <div class="cs-section-num">05</div>
+      <div class="cs-section-title">Workflow Diagrams</div>
+      <p class="cs-p">To better understand intended features, system behavior, and relationships between different user roles, we created use case workflow diagrams. These diagrams helped us map important actions, dependencies, and functionality before moving further into interface design.</p>
+      <div class="alumnify-workflow-carousel" id="alumnify-workflow-carousel">
+        <button class="alumnify-carousel-btn alumnify-carousel-btn-prev" id="alumnify-workflow-prev" type="button" aria-label="Previous workflow image">&larr;</button>
+        <div class="alumnify-carousel-stage">
+          <figure class="alumnify-workflow-slide is-active"><img src="CaseStudies/Alumnify/Workflow1.webp" alt="Alumnify workflow diagram one"></figure>
+          <figure class="alumnify-workflow-slide"><img src="CaseStudies/Alumnify/Workflow2.webp" alt="Alumnify workflow diagram two"></figure>
+          <figure class="alumnify-workflow-slide"><img src="CaseStudies/Alumnify/Workflow3.webp" alt="Alumnify workflow diagram three"></figure>
+          <figure class="alumnify-workflow-slide"><img src="CaseStudies/Alumnify/Workflow4.webp" alt="Alumnify workflow diagram four"></figure>
+          <figure class="alumnify-workflow-slide"><img src="CaseStudies/Alumnify/Workflow5.webp" alt="Alumnify workflow diagram five"></figure>
+          <figure class="alumnify-workflow-slide"><img src="CaseStudies/Alumnify/Workflow6.webp" alt="Alumnify workflow diagram six"></figure>
+        </div>
+        <button class="alumnify-carousel-btn alumnify-carousel-btn-next" id="alumnify-workflow-next" type="button" aria-label="Next workflow image">&rarr;</button>
+      </div>
+    </div>
+    <div class="cs-section reveal">
+      <div class="cs-section-num">06</div>
+      <div class="cs-section-title">Design Direction</div>
+      <p class="cs-p">The design goal was to create a web platform that felt <strong>user-friendly, simplistic, and informative</strong> while still supporting a broad set of networking and organizational needs.</p>
+      <div class="cs-2col alumnify-feature-grid">
+        <div class="cs-card alumnify-feature-card">
+          <div class="cs-card-label">Interest Groups</div>
+          <p>Users can join interest groups, post to a group feed, and create or participate in events within that group. This gave the platform a stronger sense of community while supporting connection through shared interests.</p>
+        </div>
+        <div class="cs-card alumnify-feature-card">
+          <div class="cs-card-label">Settings &amp; Personalization</div>
+          <p>Settings were designed to help users personalize their account and control what type of content is shown to them, improving relevance, accessibility, and overall usability.</p>
+        </div>
+      </div>
+      <ul class="cs-ul">
+        <li>Role-based onboarding for alumni, students, and staff</li>
+        <li>User profiles centered on interests, background, and career development</li>
+        <li>Community posting, events, and group-based interaction</li>
+        <li>Search and filtering to support discovery and connection</li>
+        <li>Administrative views that support university organization and outreach</li>
+      </ul>
+    </div>
+    <div class="cs-section reveal">
+      <div class="cs-section-num">07</div>
+      <div class="cs-section-title">Key annotations</div>
+    </div>
+    <div class="cs-section reveal">
+      <div class="cs-section-num">08</div>
       <div class="cs-section-title">Reflection</div>
+      <p class="cs-p">This project sharpened my ability to translate broad stakeholder needs into a clearer product strategy, especially when multiple audiences needed different outcomes from the same platform.</p>
       <div class="cs-step">
         <div class="cs-step-num">1</div>
-        <div class="cs-step-content"><h4>Center Design Around User Research</h4><p>Understanding users' needs led to features genuinely tailored to their desires — not what we assumed they wanted.</p></div>
+        <div class="cs-step-content"><h4>Centering Design Around User Research is Key</h4><p>Through researching and understanding key user needs and goals, we were able to shape a more useful and user-friendly application with features tailored to real user desires.</p></div>
       </div>
       <div class="cs-step">
         <div class="cs-step-num">2</div>
-        <div class="cs-step-content"><h4>Accessibility is Always a Priority</h4><p>Extra settings for visibility, content filters, and multimedia opened the platform to a diverse range of abilities and enhanced the experience for everyone.</p></div>
+        <div class="cs-step-content"><h4>Accessibility is Always a Priority</h4><p>By including flexible settings, visibility controls, and content options, the platform became more inclusive for a broader range of users and abilities.</p></div>
       </div>
       <div class="cs-step">
         <div class="cs-step-num">3</div>
-        <div class="cs-step-content"><h4>Team Timelines Are Tremendously Helpful</h4><p>Creating per-phase deadlines kept everyone accountable across different schedules and gave us buffer time for quality improvements.</p></div>
+        <div class="cs-step-content"><h4>Creating a Team Timeline is Tremendously Helpful</h4><p>Having clear project deadlines across each phase helped the team stay aligned, manage different schedules, and leave enough time for feedback and iteration.</p></div>
       </div>
     </div>
   </div>

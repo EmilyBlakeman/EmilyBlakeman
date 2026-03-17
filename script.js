@@ -292,3 +292,41 @@ function sendMsg(prefix = '') {
     }
   });
 })();
+
+(function() {
+  const carousel = document.getElementById('alumnify-workflow-carousel');
+  const prevBtn = document.getElementById('alumnify-workflow-prev');
+  const nextBtn = document.getElementById('alumnify-workflow-next');
+  const slides = carousel ? Array.from(carousel.querySelectorAll('.alumnify-workflow-slide')) : [];
+  if (!carousel || !prevBtn || !nextBtn || !slides.length) return;
+
+  let activeIndex = 0;
+  let timerId = null;
+
+  function renderSlide(index) {
+    activeIndex = (index + slides.length) % slides.length;
+    slides.forEach(function(slide, slideIndex) {
+      slide.classList.toggle('is-active', slideIndex === activeIndex);
+    });
+  }
+
+  function restartTimer() {
+    if (timerId) window.clearInterval(timerId);
+    timerId = window.setInterval(function() {
+      renderSlide(activeIndex + 1);
+    }, 10000);
+  }
+
+  prevBtn.addEventListener('click', function() {
+    renderSlide(activeIndex - 1);
+    restartTimer();
+  });
+
+  nextBtn.addEventListener('click', function() {
+    renderSlide(activeIndex + 1);
+    restartTimer();
+  });
+
+  renderSlide(0);
+  restartTimer();
+})();
