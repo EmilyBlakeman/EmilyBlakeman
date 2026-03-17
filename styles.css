@@ -678,8 +678,15 @@ nav {
 
 .cs-band {
   padding: 56px var(--page-side) 48px;
-  max-width: var(--max-w); margin: 0 auto;
+  width: 100%;
+  max-width: none;
+  margin: 0;
   position: relative; overflow: hidden;
+}
+.cs-band > * {
+  max-width: var(--max-w);
+  margin-left: auto;
+  margin-right: auto;
 }
 .cs-band::before {
   content: ''; position: absolute; inset: 0;
