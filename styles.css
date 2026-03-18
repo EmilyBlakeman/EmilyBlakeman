@@ -740,7 +740,7 @@ nav {
   font-size: .6rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase;
   margin-bottom: 4px;
 }
-.cs-meta-pill-value { font-size: .86rem; font-weight: 600; color: var(--ink); }
+.cs-meta-pill-value { font-size: .86rem; font-weight: 400; color: var(--ink); }
 
 /* Hero image */
 .cs-hero-img {
@@ -754,9 +754,10 @@ nav {
 }
 
 /* Case study body */
-.cs-body { max-width: var(--max-w); margin: 0 auto; padding: 72px var(--page-side) 80px; }
+.cs-body { max-width: var(--max-w); margin: 0 auto; padding: 72px var(--page-side) 0; }
 
 .cs-section { margin-bottom: 72px; }
+.cs-body .cs-section:last-child { margin-bottom: 92px; }
 .cs-section-num {
   font-family: 'Playfair Display', serif; font-weight: 800; font-size: 4rem;
   line-height: 1; margin-bottom: -10px;
@@ -868,8 +869,8 @@ nav {
 }
 
 /* Other work footer */
-.cs-other { padding: 60px var(--page-side) 112px; border-top: 1px solid var(--border); max-width: var(--max-w); margin: 0 auto; }
-.cs-other h3 { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.3rem; margin-bottom: 24px; }
+.cs-other { padding: 32px var(--page-side) 112px; border-top: 1px solid var(--border); max-width: var(--max-w); margin: 0 auto; }
+.cs-other h3 { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 1.3rem; margin-bottom: 36px; }
 .cs-other-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; }
 .cs-other-card {
   background: white; border-radius: var(--radius-sm); overflow: hidden;
@@ -877,7 +878,7 @@ nav {
   transition: transform .25s, box-shadow .25s;
 }
 .cs-other-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,.1); }
-.cs-other-thumb { height: 90px; display: flex; align-items: center; justify-content: center; overflow: hidden; background: #f3f1ff; }
+.cs-other-thumb { height: 138px; display: flex; align-items: center; justify-content: center; overflow: hidden; background: #f3f1ff; }
 .cs-other-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .cs-other-info { padding: 12px 16px; }
 .cs-other-info strong { font-size: .86rem; font-family: 'Playfair Display', serif; font-weight: 700; display: block; }
@@ -2199,7 +2200,7 @@ body.gallery-lightbox-open {
   color: #2f66d6 !important;
 }
 #cs-genemod .cs-meta-pill-value {
-  font-weight: 500;
+  font-weight: 400;
 }
 
 
@@ -2391,7 +2392,7 @@ body.gallery-lightbox-open {
 #cs-genemod .genemod-impact-callout h5 {
   font-size: .94rem;
   line-height: 1.45;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--ink);
   margin: 0 0 10px;
 }
@@ -2422,6 +2423,13 @@ body.gallery-lightbox-open {
 #cs-genemod .genemod-barcode-group .genemod-inline-image img {
   object-fit: contain;
   background: #fff;
+}
+#cs-genemod .genemod-barcode-grid img,
+#cs-genemod .genemod-move-grid img,
+#cs-genemod .genemod-barcode-group .genemod-inline-image img {
+  border: 0;
+  border-radius: 0;
+  background: transparent;
 }
 #cs-genemod .genemod-analytics-grid {
   align-items: center;
@@ -2468,32 +2476,44 @@ body.gallery-lightbox-open {
   display: grid;
   grid-template-columns: minmax(0, 1.45fr) minmax(300px, 1.15fr);
   gap: 18px;
-  align-items: center;
+  align-items: start;
+  justify-items: center;
 }
 #cs-genemod .genemod-barcode-group {
   min-width: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   height: 100%;
 }
 #cs-genemod .genemod-barcode-grid {
   margin: 0;
-  width: 100%;
+  width: min(100%, 620px);
   align-items: center;
 }
 #cs-genemod .genemod-barcode-group .genemod-inline-image {
-  max-width: 100%;
+  max-width: 430px;
   width: 100%;
   margin: 0;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  background: transparent;
+}
+#cs-genemod .genemod-barcode-group:last-child .genemod-inline-image {
+  margin-top: 34px;
 }
 #cs-genemod .genemod-compare-label {
-  margin-top: 10px;
+  margin-top: auto;
+  padding-top: 10px;
   text-align: center;
   font-size: .8rem;
   line-height: 1.6;
   color: var(--muted);
+}
+#cs-genemod .genemod-barcode-group:last-child .genemod-compare-label {
+  transform: none;
 }
 #cs-genemod .genemod-workflow-images {
   grid-template-columns: 1fr;
@@ -2502,7 +2522,7 @@ body.gallery-lightbox-open {
 }
 #cs-genemod .genemod-workflow-images img {
   min-height: 0;
-  aspect-ratio: 16 / 5;
+  aspect-ratio: 16 / 4.2;
   object-fit: contain;
   background: #fff;
 }
@@ -2543,7 +2563,7 @@ body.gallery-lightbox-open {
   color: #8b4cc7 !important;
 }
 #cs-inflerra .cs-meta-pill-value {
-  font-weight: 500;
+  font-weight: 400;
 }
 #cs-inflerra .inflerra-meta-row {
   max-width: var(--max-w);
@@ -2683,7 +2703,7 @@ body.gallery-lightbox-open {
   color: #2365ca !important;
 }
 #cs-aroundtown .cs-meta-pill-value {
-  font-weight: 500;
+  font-weight: 400;
 }
 #cs-aroundtown .aroundtown-meta-row {
   max-width: var(--max-w);
@@ -2864,7 +2884,7 @@ body.gallery-lightbox-open {
   color: #e67e22 !important;
 }
 #cs-alumnify .cs-meta-pill-value {
-  font-weight: 500;
+  font-weight: 400;
 }
 #cs-alumnify .alumnify-meta-row {
   max-width: var(--max-w);
