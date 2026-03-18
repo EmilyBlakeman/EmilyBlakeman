@@ -41,6 +41,7 @@ function activateView(type, id, options = {}) {
     a.classList.toggle('active', type === 'page' && a.dataset.page === id);
   });
 
+  const usingFileProtocol = window.location.protocol === 'file:';
   const pageRoutes = {
     home: '/home',
     about: '/about',
@@ -55,13 +56,35 @@ function activateView(type, id, options = {}) {
     aroundtown: '/aroundtown',
     alumnify: '/alumnify'
   };
-  const route = type === 'case-study' ? caseStudyRoutes[id] : pageRoutes[id];
+  const pageHashes = {
+    home: '#home',
+    about: '#page-about',
+    gallery: '#page-gallery',
+    resume: '#page-resume',
+    contact: '#page-contact',
+    earlier: '#page-earlier'
+  };
+  const caseStudyHashes = {
+    genemod: '#cs-genemod',
+    inflerra: '#cs-inflerra',
+    aroundtown: '#cs-aroundtown',
+    alumnify: '#cs-alumnify'
+  };
+  const route = usingFileProtocol
+    ? (type === 'case-study' ? caseStudyHashes[id] : pageHashes[id])
+    : (type === 'case-study' ? caseStudyRoutes[id] : pageRoutes[id]);
   const state = { type, id };
   if (route) {
-    if (push) {
-      window.history.pushState(state, '', route);
-    } else if (replace) {
-      window.history.replaceState(state, '', route);
+    try {
+      if (push) {
+        window.history.pushState(state, '', route);
+      } else if (replace) {
+        window.history.replaceState(state, '', route);
+      }
+    } catch (error) {
+      if (usingFileProtocol) {
+        window.location.hash = type === 'case-study' ? caseStudyHashes[id] : pageHashes[id];
+      }
     }
   }
 
@@ -79,6 +102,18 @@ function showCS(id) {
 }
 
 function syncViewToLocation() {
+  const usingFileProtocol = window.location.protocol === 'file:';
+  const hash = window.location.hash || '#home';
+  if (usingFileProtocol) {
+    if (hash.startsWith('#cs-')) {
+      return activateView('case-study', hash.replace('#cs-', ''), { replace: true });
+    }
+    if (hash.startsWith('#page-')) {
+      return activateView('page', hash.replace('#page-', ''), { replace: true });
+    }
+    return activateView('page', 'home', { replace: true });
+  }
+
   const path = window.location.pathname.replace(/\/+$/, '') || '/home';
   const routeMap = {
     '/': { type: 'page', id: 'home' },
@@ -97,8 +132,6 @@ function syncViewToLocation() {
   if (routeMap[path]) {
     return activateView(routeMap[path].type, routeMap[path].id, { replace: true });
   }
-
-  const hash = window.location.hash || '#home';
   if (hash.startsWith('#cs-')) {
     return activateView('case-study', hash.replace('#cs-', ''), { replace: true });
   }
