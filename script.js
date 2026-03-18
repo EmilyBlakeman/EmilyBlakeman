@@ -2,16 +2,26 @@
 const cur = document.getElementById('cur');
 const aura = document.getElementById('cur-aura');
 let mx=0, my=0, ax=0, ay=0;
+const hasFinePointer = window.matchMedia('(pointer: fine)').matches;
 
-document.addEventListener('mousemove', e => {
-  mx = e.clientX; my = e.clientY;
-  cur.style.left = mx + 'px'; cur.style.top = my + 'px';
-});
-(function loop() {
-  ax += (mx-ax) * .1; ay += (my-ay) * .1;
-  aura.style.left = ax + 'px'; aura.style.top = ay + 'px';
-  requestAnimationFrame(loop);
-})();
+if (cur && aura && hasFinePointer) {
+  document.addEventListener('mousemove', e => {
+    mx = e.clientX;
+    my = e.clientY;
+    cur.style.left = mx + 'px';
+    cur.style.top = my + 'px';
+  }, { passive: true });
+
+  (function loop() {
+    ax += (mx - ax) * 0.1;
+    ay += (my - ay) * 0.1;
+    aura.style.left = ax + 'px';
+    aura.style.top = ay + 'px';
+    requestAnimationFrame(loop);
+  })();
+} else {
+  document.body.classList.add('cursor-disabled');
+}
 
 document.querySelectorAll('a, button, .work-card, .cs-other-card, .stat-item, .about-card, .pill, .filt').forEach(el => {
   el.addEventListener('mouseenter', () => document.body.classList.add('hovering'));
@@ -105,11 +115,22 @@ if (gradWord) {
 (function() {
   const cards = [...document.querySelectorAll('.fact-card')];
   const wraps = [...document.querySelectorAll('.fact-wrap')];
+  const homePage = document.getElementById('page-home');
+  const hero = document.querySelector('.home-hero-outer');
+  if (!cards.length || !wraps.length || !homePage || !hero) return;
+
   const PROXIMITY = 160;
   const MAX_MOVE  = 30;
   const LERP      = 0.1;
+  let pendingPointer = null;
+  let pointerRaf = null;
+  let heroInView = true;
 
   const state = cards.map(() => ({ tx:0, ty:0, cx:0, cy:0, active:false, raf:null }));
+
+  function interactionEnabled() {
+    return hasFinePointer && homePage.classList.contains('active') && heroInView;
+  }
 
   function getCenter(i) {
     const r = wraps[i].getBoundingClientRect();
@@ -131,8 +152,26 @@ if (gradWord) {
     }
   }
 
-  document.addEventListener('mousemove', e => {
-    const mx = e.clientX, my = e.clientY;
+  function resetCards() {
+    cards.forEach((card, i) => {
+      const s = state[i];
+      s.tx = 0;
+      s.ty = 0;
+      if (s.active) {
+        s.active = false;
+        card.classList.remove('near');
+      }
+      if (!s.raf) s.raf = requestAnimationFrame(() => tick(i));
+    });
+  }
+
+  function applyPointer(mx, my) {
+    pointerRaf = null;
+    if (!interactionEnabled()) {
+      resetCards();
+      return;
+    }
+
     cards.forEach((card, i) => {
       const s = state[i];
       const { x: nx, y: ny } = getCenter(i);
@@ -155,6 +194,30 @@ if (gradWord) {
         if (!s.raf) s.raf = requestAnimationFrame(() => tick(i));
       }
     });
+  }
+
+  const heroObserver = new IntersectionObserver((entries) => {
+    heroInView = entries.some(entry => entry.isIntersecting);
+    if (!heroInView) resetCards();
+  }, { threshold: 0.15 });
+  heroObserver.observe(hero);
+
+  document.addEventListener('mousemove', e => {
+    if (!interactionEnabled()) return;
+    pendingPointer = { x: e.clientX, y: e.clientY };
+    if (pointerRaf) return;
+    pointerRaf = requestAnimationFrame(() => {
+      if (!pendingPointer) return;
+      applyPointer(pendingPointer.x, pendingPointer.y);
+    });
+  }, { passive: true });
+
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) resetCards();
+  });
+
+  window.addEventListener('resize', () => {
+    if (!interactionEnabled()) resetCards();
   });
 })();
 

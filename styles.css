@@ -38,6 +38,13 @@ body {
   overflow-x: hidden;
   cursor: none;
 }
+body.cursor-disabled {
+  cursor: auto;
+}
+body.cursor-disabled #cur,
+body.cursor-disabled #cur-aura {
+  display: none;
+}
 
 /* -- CUSTOM CURSOR -- */
 #cur {
@@ -452,6 +459,8 @@ nav {
 .home-work-section {
   padding: 80px var(--page-side) 100px;
   max-width: var(--max-w); margin: 0 auto;
+  content-visibility: auto;
+  contain-intrinsic-size: 1600px;
 }
 .home-work-header { margin-bottom: 40px; }
 
@@ -459,6 +468,8 @@ nav {
 .process-strip {
   display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px;
   margin-bottom: 56px;
+  content-visibility: auto;
+  contain-intrinsic-size: 420px;
 }
 .process-card {
   background: white; border: 1px solid var(--border);
@@ -499,6 +510,7 @@ nav {
   transition: transform .35s cubic-bezier(.22,1,.36,1), box-shadow .35s;
   position: relative;
   height: 300px;
+  contain: layout paint;
 }
 .hpc:not(.hpc-locked):hover {
   box-shadow: 0 20px 60px rgba(0,0,0,.12);
@@ -528,6 +540,7 @@ nav {
   width: 100%; height: 100%;
   object-fit: cover;
   transition: transform .45s cubic-bezier(.22,1,.36,1);
+  will-change: transform;
 }
 .hpc:not(.hpc-locked):hover .hpc-img-photo { transform: scale(1.08); }
 
@@ -1065,6 +1078,8 @@ nav {
 .c-link-text { font-size: .88rem; font-weight: 600; color: var(--ink2); }
 
 .home-connect {
+  content-visibility: auto;
+  contain-intrinsic-size: 360px;
   margin-top: 52px;
   padding: 44px 36px;
   display: flex;
