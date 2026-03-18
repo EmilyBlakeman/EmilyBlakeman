@@ -510,6 +510,8 @@ nav {
   transition: transform .35s cubic-bezier(.22,1,.36,1), box-shadow .35s;
   position: relative;
   height: 300px;
+  content-visibility: auto;
+  contain-intrinsic-size: 300px;
   contain: layout paint;
 }
 .hpc:not(.hpc-locked):hover {
@@ -1230,9 +1232,10 @@ footer {
   justify-content: center;
   margin: 52px 0 0;
 }
-.earlier-case-studies-btn {
+.earlier-case-studies-btn.btn {
   min-width: 280px;
   justify-content: center;
+  font-weight: 500;
 }
 .earlier-case-studies-wrap {
   padding-top: 72px;
