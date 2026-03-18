@@ -21,6 +21,8 @@
 
   --radius: 20px;
   --radius-sm: 12px;
+  --cs-img-radius: 14px;
+  --cs-img-radius-sm: 8px;
   --side: 64px;
   --page-side: 40px;
   --side-mobile: 24px;
@@ -766,10 +768,17 @@ nav {
   letter-spacing: -.01em; margin-bottom: 20px;
   padding-bottom: 16px; border-bottom: 1.5px solid var(--border);
 }
-.cs-p { font-size: .96rem; color: var(--ink2); line-height: 1.9; margin-bottom: 18px; font-weight: 400; }
+.cs-p { font-size: .94rem; color: var(--ink2); line-height: 1.8; margin-bottom: 18px; font-weight: 400; }
 .cs-p strong { color: var(--ink); font-weight: 600; }
 .cs-p em { color: var(--g1); font-style: italic; }
-.cs-h4 { font-size: .92rem; font-weight: 700; color: var(--ink); margin: 26px 0 8px; }
+.cs-h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.08rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--ink);
+  margin: 26px 0 10px;
+}
 
 .cs-ul { list-style: none; margin: 12px 0 20px; }
 .cs-ul li {
@@ -815,10 +824,10 @@ nav {
 }
 .cs-card:hover { transform: translateY(-3px); box-shadow: 0 8px 28px rgba(0,0,0,.09); }
 .cs-card-label {
-  font-size: .46rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
-  margin-bottom: 10px;
+  font-size: .68rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase;
+  margin-bottom: 12px;
 }
-.cs-card p { font-size: .86rem; color: var(--ink2); line-height: 1.7; font-weight: 400; }
+.cs-card p { font-size: .9rem; color: var(--ink2); line-height: 1.75; font-weight: 400; }
 .cs-card ul { list-style: none; }
 .cs-card ul li { font-size: .84rem; color: var(--ink2); padding-left: 14px; position: relative; margin-bottom: 5px; }
 .cs-card ul li::before { content: 'ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¾ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¾ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¾ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¦ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â·'; position: absolute; left: 2px; font-size: 1.2rem; line-height: 1; }
@@ -826,21 +835,30 @@ nav {
 /* Process step */
 .cs-step { display: flex; gap: 18px; margin-bottom: 28px; }
 .cs-step-num {
-  width: 36px; height: 36px; border-radius: 50%; flex-shrink: 0; margin-top: 2px;
-  display: flex; align-items: center; justify-content: center;
-  font-family: 'Playfair Display', serif; font-weight: 800; font-size: .9rem; color: white;
+  width: 36px; height: 36px; border-radius: 50%; flex-shrink: 0; margin-top: 0;
+  display: grid; place-items: center;
+  font-family: 'Outfit', sans-serif; font-weight: 700; font-size: .92rem; line-height: 1; color: white;
   background: var(--grad-main);
+  padding-top: 0;
+  padding-bottom: 2px;
 }
-.cs-step-content h4 { font-size: .92rem; font-weight: 700; margin-bottom: 6px; }
-.cs-step-content p { font-size: .88rem; color: var(--ink2); line-height: 1.75; font-weight: 400; }
+.cs-step-content h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.06rem;
+  line-height: 1.28;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 10px;
+}
+.cs-step-content p { font-size: .9rem; color: var(--ink2); line-height: 1.75; font-weight: 400; }
 
 /* Images */
-.cs-img-full { width: 100%; border-radius: var(--radius); overflow: hidden; margin: 28px 0; border: 1px solid var(--border); background: var(--bg); }
+.cs-img-full { width: 100%; border-radius: var(--cs-img-radius); overflow: hidden; margin: 28px 0; border: 1px solid var(--border); background: var(--bg); }
 .cs-img-full img { width: 100%; height: auto; display: block; }
 .cs-2img { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 24px 0; }
-.cs-2img img { width: 100%; height: auto; display: block; border-radius: var(--radius-sm); border: 1px solid var(--border); background: var(--bg); }
-.cs-caption { font-size: .74rem; color: var(--muted); text-align: center; font-style: italic; margin-top: -10px; margin-bottom: 20px; }
-.cs-img-label { text-align: center; font-size: .72rem; color: var(--muted); font-style: italic; margin-top: 6px; }
+.cs-2img img { width: 100%; height: auto; display: block; border-radius: var(--cs-img-radius-sm); border: 1px solid var(--border); background: var(--bg); }
+.cs-caption { font-size: .8rem; color: var(--muted); text-align: center; font-style: italic; line-height: 1.6; margin-top: -10px; margin-bottom: 20px; }
+.cs-img-label { text-align: center; font-size: .8rem; color: var(--muted); font-style: italic; line-height: 1.6; margin-top: 8px; }
 
 /* Tag chips */
 .cs-chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0; }
@@ -2295,9 +2313,9 @@ body.gallery-lightbox-open {
 }
 #cs-genemod .genemod-step-subhead {
   font-family: 'Playfair Display', serif;
-  font-size: 1.1rem;
-  line-height: 1.25;
-  margin: 18px 0 12px;
+  font-size: 1.08rem;
+  line-height: 1.3;
+  margin: 24px 0 10px;
 }
 #cs-genemod .genemod-step-list {
   margin: 0 0 24px 20px;
@@ -2308,7 +2326,7 @@ body.gallery-lightbox-open {
 }
 #cs-genemod .genemod-inline-image {
   margin: 24px 0 0;
-  border-radius: var(--radius);
+  border-radius: var(--cs-img-radius);
   overflow: hidden;
   border: 1px solid var(--border);
   box-shadow: 0 10px 30px rgba(15, 23, 42, .08);
@@ -2353,7 +2371,7 @@ body.gallery-lightbox-open {
   padding: 0;
 }
 #cs-genemod .genemod-step-list li {
-  font-size: .88rem;
+  font-size: .9rem;
   color: var(--ink2);
   line-height: 1.75;
   font-weight: 400;
@@ -2371,15 +2389,15 @@ body.gallery-lightbox-open {
   align-self: center;
 }
 #cs-genemod .genemod-impact-callout h5 {
-  font-size: .84rem;
+  font-size: .94rem;
   line-height: 1.45;
-  font-weight: 700;
+  font-weight: 600;
   color: var(--ink);
-  margin: 0 0 8px;
+  margin: 0 0 10px;
 }
 #cs-genemod .genemod-impact-callout p {
-  font-size: .84rem;
-  line-height: 1.65;
+  font-size: .9rem;
+  line-height: 1.7;
   color: var(--ink2);
   margin: 0;
 }
@@ -2405,12 +2423,39 @@ body.gallery-lightbox-open {
   object-fit: contain;
   background: #fff;
 }
+#cs-genemod .genemod-analytics-grid {
+  align-items: center;
+}
+#cs-genemod .genemod-analytics-grid figure {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  border-radius: var(--cs-img-radius-sm);
+  border: 1px solid var(--border);
+  background: #fff;
+}
+#cs-genemod .genemod-analytics-grid figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+#cs-genemod .genemod-analytics-grid figure:first-child,
+#cs-genemod .genemod-analytics-grid figure:last-child {
+  align-self: center;
+}
+#cs-genemod .genemod-analytics-grid figure:first-child img,
+#cs-genemod .genemod-analytics-grid figure:last-child img {
+  width: 100%;
+  height: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+}
 #cs-genemod .genemod-move-grid {
   max-width: 920px;
 }
 #cs-genemod .genemod-image-caption {
   max-width: 860px;
-  margin: 10px auto 0;
+  margin: 16px auto 42px;
   text-align: center;
   font-size: .8rem;
   line-height: 1.6;
@@ -2421,25 +2466,33 @@ body.gallery-lightbox-open {
   max-width: 980px;
   margin: 26px auto 0;
   display: grid;
-  grid-template-columns: minmax(0, 2fr) minmax(240px, 1fr);
+  grid-template-columns: minmax(0, 1.45fr) minmax(300px, 1.15fr);
   gap: 18px;
-  align-items: start;
+  align-items: center;
 }
 #cs-genemod .genemod-barcode-group {
   min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 #cs-genemod .genemod-barcode-grid {
   margin: 0;
+  width: 100%;
+  align-items: center;
 }
 #cs-genemod .genemod-barcode-group .genemod-inline-image {
   max-width: 100%;
+  width: 100%;
   margin: 0;
 }
 #cs-genemod .genemod-compare-label {
   margin-top: 10px;
   text-align: center;
   font-size: .8rem;
-  line-height: 1.5;
+  line-height: 1.6;
   color: var(--muted);
 }
 #cs-genemod .genemod-workflow-images {
@@ -2533,9 +2586,9 @@ body.gallery-lightbox-open {
 }
 #cs-inflerra .inflerra-key-title {
   font-family: 'Playfair Display', serif;
-  font-size: 1.4rem;
-  line-height: 1.2;
-  margin: 0 0 18px;
+  font-size: 1.08rem;
+  line-height: 1.3;
+  margin: 0 0 14px;
   color: var(--ink);
 }
 #cs-inflerra .inflerra-key-list {
@@ -2547,8 +2600,9 @@ body.gallery-lightbox-open {
   gap: 14px 28px;
 }
 #cs-inflerra .inflerra-key-list li {
+  font-size: .92rem;
   color: var(--ink2);
-  line-height: 1.7;
+  line-height: 1.75;
   padding-left: 2px;
 }
 #cs-inflerra .inflerra-experience-grid {
@@ -2559,7 +2613,7 @@ body.gallery-lightbox-open {
   box-shadow: 0 10px 28px rgba(15, 23, 42, .05);
 }
 #cs-inflerra .inflerra-experience-card .cs-card-label {
-  font-size: .72rem;
+  font-size: .68rem;
   letter-spacing: .16em;
   margin-bottom: 14px;
 }
@@ -2650,7 +2704,7 @@ body.gallery-lightbox-open {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 26px;
+  border-radius: 18px;
   box-shadow: 0 18px 44px rgba(35, 101, 202, .12);
 }
 #cs-aroundtown .aroundtown-device-left {
@@ -2703,13 +2757,13 @@ body.gallery-lightbox-open {
 }
 #cs-aroundtown .aroundtown-goal-card .cs-card-label,
 #cs-aroundtown .aroundtown-feature-card .cs-card-label {
-  font-size: .76rem;
+  font-size: .68rem;
   letter-spacing: .16em;
   margin-bottom: 12px;
 }
 #cs-aroundtown .aroundtown-goal-card p {
   margin: 0;
-  font-size: .92rem;
+  font-size: .9rem;
   color: var(--ink2);
   line-height: 1.75;
 }
@@ -2722,8 +2776,8 @@ body.gallery-lightbox-open {
   box-shadow: 0 10px 28px rgba(15, 23, 42, .05);
 }
 #cs-aroundtown .aroundtown-font-card .cs-card-label {
-  font-size: .82rem;
-  letter-spacing: .18em;
+  font-size: .68rem;
+  letter-spacing: .16em;
   margin-bottom: 14px;
 }
 #cs-aroundtown .aroundtown-font-list {
@@ -2737,8 +2791,8 @@ body.gallery-lightbox-open {
   background: white;
   border: 1px solid rgba(35, 101, 202, .12);
   color: var(--ink2);
-  font-size: .86rem;
-  line-height: 1.4;
+  font-size: .9rem;
+  line-height: 1.6;
 }
 #cs-aroundtown .aroundtown-gallery {
   display: grid;
@@ -2756,7 +2810,7 @@ body.gallery-lightbox-open {
 }
 #cs-aroundtown .aroundtown-gallery-item {
   margin: 0;
-  border-radius: var(--radius);
+  border-radius: var(--cs-img-radius);
   overflow: hidden;
   border: 1px solid rgba(35, 101, 202, .1);
   background: #fff;
@@ -2826,7 +2880,7 @@ body.gallery-lightbox-open {
 }
 #cs-alumnify .alumnify-hero-panel {
   margin: 0;
-  border-radius: 28px;
+  border-radius: 18px;
   overflow: hidden;
   border: 1px solid rgba(230, 126, 34, .08);
   background: #fff;
@@ -2888,13 +2942,13 @@ body.gallery-lightbox-open {
 #cs-alumnify .alumnify-feature-card .cs-card-label,
 #cs-alumnify .alumnify-highlight-card .cs-card-label {
   color: #7b3fc9;
-  font-size: .76rem;
+  font-size: .68rem;
   letter-spacing: .16em;
   margin-bottom: 12px;
 }
 #cs-alumnify .alumnify-goal-card p {
   margin: 0;
-  font-size: .92rem;
+  font-size: .9rem;
   color: var(--ink2);
   line-height: 1.75;
 }
@@ -2920,7 +2974,7 @@ body.gallery-lightbox-open {
 }
 #cs-alumnify .alumnify-inline-image {
   margin: 0;
-  border-radius: var(--radius);
+  border-radius: var(--cs-img-radius);
   overflow: hidden;
   border: 1px solid rgba(123, 63, 201, .1);
   background: #fff;
@@ -2958,7 +3012,7 @@ body.gallery-lightbox-open {
   position: absolute;
   inset: 0 56px;
   margin: 0;
-  border-radius: var(--radius);
+  border-radius: var(--cs-img-radius);
   overflow: hidden;
   border: 1px solid rgba(230, 126, 34, .1);
   background: #fff;
