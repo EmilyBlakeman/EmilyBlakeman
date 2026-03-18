@@ -41,12 +41,28 @@ function activateView(type, id, options = {}) {
     a.classList.toggle('active', type === 'page' && a.dataset.page === id);
   });
 
-  const hash = type === 'case-study' ? '#cs-' + id : (id === 'home' ? '#home' : '#page-' + id);
+  const pageRoutes = {
+    home: '/home',
+    about: '/about',
+    gallery: '/gallery',
+    resume: '/resume',
+    contact: '/contact',
+    earlier: '/casestudies'
+  };
+  const caseStudyRoutes = {
+    genemod: '/genemod',
+    inflerra: '/inflerra',
+    aroundtown: '/aroundtown',
+    alumnify: '/alumnify'
+  };
+  const route = type === 'case-study' ? caseStudyRoutes[id] : pageRoutes[id];
   const state = { type, id };
-  if (push) {
-    window.history.pushState(state, '', hash);
-  } else if (replace) {
-    window.history.replaceState(state, '', hash);
+  if (route) {
+    if (push) {
+      window.history.pushState(state, '', route);
+    } else if (replace) {
+      window.history.replaceState(state, '', route);
+    }
   }
 
   window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -63,12 +79,34 @@ function showCS(id) {
 }
 
 function syncViewToLocation() {
+  const path = window.location.pathname.replace(/\/+$/, '') || '/home';
+  const routeMap = {
+    '/': { type: 'page', id: 'home' },
+    '/home': { type: 'page', id: 'home' },
+    '/about': { type: 'page', id: 'about' },
+    '/gallery': { type: 'page', id: 'gallery' },
+    '/resume': { type: 'page', id: 'resume' },
+    '/contact': { type: 'page', id: 'contact' },
+    '/casestudies': { type: 'page', id: 'earlier' },
+    '/genemod': { type: 'case-study', id: 'genemod' },
+    '/inflerra': { type: 'case-study', id: 'inflerra' },
+    '/aroundtown': { type: 'case-study', id: 'aroundtown' },
+    '/alumnify': { type: 'case-study', id: 'alumnify' }
+  };
+
+  if (routeMap[path]) {
+    return activateView(routeMap[path].type, routeMap[path].id, { replace: true });
+  }
+
   const hash = window.location.hash || '#home';
   if (hash.startsWith('#cs-')) {
     return activateView('case-study', hash.replace('#cs-', ''), { replace: true });
   }
   if (hash.startsWith('#page-')) {
     return activateView('page', hash.replace('#page-', ''), { replace: true });
+  }
+  if (hash === '#home') {
+    return activateView('page', 'home', { replace: true });
   }
   return activateView('page', 'home', { replace: true });
 }
