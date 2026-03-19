@@ -2710,22 +2710,59 @@ body.gallery-lightbox-open {
   margin: 0 auto 64px;
   padding: 0 var(--page-side);
 }
-#cs-aroundtown .aroundtown-hero-image {
-  width: min(100%, 512px);
-  margin: 0 auto 34px;
+#cs-aroundtown .aroundtown-hero-gallery {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  max-width: 780px;
+  margin: 0 auto 0;
+  align-items: end;
+  gap: 0;
   padding: 0;
-  display: block;
+  overflow: visible;
+  transform: scale(.89);
+  transform-origin: center top;
+}
+#cs-aroundtown .cs-body {
+  padding-top: 12px;
+}
+#cs-aroundtown .aroundtown-hero-gallery .aroundtown-gallery-item {
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  overflow: visible;
 }
 #cs-aroundtown .aroundtown-device {
   margin: 0;
 }
-#cs-aroundtown .aroundtown-hero-image img,
+#cs-aroundtown .aroundtown-hero-gallery img,
 #cs-aroundtown .aroundtown-device img {
   width: 100%;
   height: auto;
   display: block;
   border-radius: 18px;
   box-shadow: 0 18px 44px rgba(35, 101, 202, .12);
+}
+#cs-aroundtown .aroundtown-hero-card {
+  position: relative;
+  transition: transform .25s ease;
+}
+#cs-aroundtown .aroundtown-hero-card-left,
+#cs-aroundtown .aroundtown-hero-card-right {
+  transform: scale(.75);
+  z-index: 1;
+}
+#cs-aroundtown .aroundtown-hero-card-left {
+  transform-origin: right center;
+  margin-right: -108px;
+}
+#cs-aroundtown .aroundtown-hero-card-center {
+  z-index: 3;
+  transform: scale(.9);
+  margin-left: -48px;
+  margin-right: -48px;
+}
+#cs-aroundtown .aroundtown-hero-card-right {
+  transform-origin: left center;
+  margin-left: -108px;
 }
 #cs-aroundtown .aroundtown-device-left {
   max-width: 196px;
@@ -2842,12 +2879,13 @@ body.gallery-lightbox-open {
   margin-right: 0;
 }
 #cs-aroundtown .aroundtown-gallery-hifi-group {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  max-width: 700px;
+  grid-template-columns: repeat(auto-fit, minmax(148px, 148px));
+  max-width: 640px;
   margin-top: 16px;
   margin-bottom: 26px;
   margin-left: 0;
   margin-right: 0;
+  justify-content: start;
 }
 #cs-aroundtown .aroundtown-gallery-hifi-2up {
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -2855,7 +2893,7 @@ body.gallery-lightbox-open {
 }
 #cs-aroundtown .aroundtown-hifi-row {
   display: grid;
-  grid-template-columns: minmax(0, 260px) minmax(0, 520px);
+  grid-template-columns: minmax(0, 312px) minmax(0, 476px);
   gap: 28px;
   align-items: start;
   justify-content: start;
@@ -2863,11 +2901,12 @@ body.gallery-lightbox-open {
 #cs-aroundtown .aroundtown-hifi-col {
   min-width: 0;
 }
-#cs-aroundtown .aroundtown-hifi-col-onboard .aroundtown-gallery-hifi-2up {
-  max-width: 340px;
+#cs-aroundtown .aroundtown-hifi-col-onboard .aroundtown-gallery-hifi-group {
+  grid-template-columns: repeat(2, minmax(0, 148px));
+  max-width: 310px;
 }
-#cs-aroundtown .aroundtown-hifi-col-search .aroundtown-gallery-hifi-group {
-  max-width: 520px;
+#cs-aroundtown .aroundtown-hifi-row-paired {
+  grid-template-columns: repeat(2, minmax(0, 476px));
 }
 #cs-aroundtown .aroundtown-gallery-item {
   margin: 0;
@@ -2922,23 +2961,48 @@ body.gallery-lightbox-open {
   text-decoration: underline;
 }
 @media(max-width: 900px) {
-  #cs-aroundtown .aroundtown-hero-image {
-    width: min(100%, 512px);
+  #cs-aroundtown .aroundtown-hero-gallery {
+    max-width: 560px;
+    padding: 0;
+    transform: scale(.96);
   }
   #cs-aroundtown .aroundtown-hifi-row {
     grid-template-columns: 1fr;
     gap: 12px;
   }
+  #cs-aroundtown .aroundtown-hifi-col-onboard .aroundtown-gallery-hifi-group {
+    grid-template-columns: repeat(2, minmax(0, 148px));
+    max-width: 310px;
+  }
+  #cs-aroundtown .aroundtown-hifi-row-paired {
+    grid-template-columns: 1fr;
+  }
+  #cs-aroundtown .aroundtown-hero-gallery,
   #cs-aroundtown .aroundtown-gallery-hifi,
   #cs-aroundtown .aroundtown-gallery-hifi-group {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  #cs-aroundtown .aroundtown-gallery-hifi-2up {
-    max-width: 340px;
+  #cs-aroundtown .aroundtown-hifi-col-onboard .aroundtown-gallery-hifi-group {
+    grid-template-columns: repeat(2, minmax(0, 148px));
   }
 }
 @media(max-width: 768px) {
+  #cs-aroundtown .aroundtown-hero-gallery {
+    gap: 10px;
+    padding: 0;
+    transform: none;
+  }
+  #cs-aroundtown .aroundtown-hero-card-left,
+  #cs-aroundtown .aroundtown-hero-card-right {
+    transform: none;
+    margin: 0;
+  }
+  #cs-aroundtown .aroundtown-hero-card-center {
+    transform: none;
+    margin: 0;
+  }
   #cs-aroundtown .aroundtown-stat-row,
+  #cs-aroundtown .aroundtown-hero-gallery,
   #cs-aroundtown .aroundtown-gallery-lowfi,
   #cs-aroundtown .aroundtown-gallery-hifi,
   #cs-aroundtown .aroundtown-gallery-hifi-group,
