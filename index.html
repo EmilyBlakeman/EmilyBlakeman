@@ -19,7 +19,12 @@
     <img class="nav-logo-mark" src="EB Logo.png" alt="EB logo">
     <span class="nav-logo-text">Emily Blakeman</span>
   </a>
-  <ul class="nav-links">
+  <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav-links" aria-label="Open navigation menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  <ul class="nav-links" id="site-nav-links">
     <li><a href="#" onclick="showPage('about');return false;" data-page="about">About</a></li>
     <li><a href="#" onclick="showPage('gallery');return false;" data-page="gallery">Gallery</a></li>
     <li><a href="#" onclick="showPage('resume');return false;" data-page="resume">Resume</a></li>
