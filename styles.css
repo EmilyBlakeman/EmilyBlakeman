@@ -2181,7 +2181,8 @@ body.gallery-lightbox-open {
   }
 
   .hero-sub {
-    max-width: 100%;
+    max-width: 42ch;
+    text-wrap: balance;
     margin-bottom: 32px;
   }
 
@@ -2201,16 +2202,28 @@ body.gallery-lightbox-open {
   }
 
   .fact-card {
-    white-space: nowrap;
-    transform: scale(.9);
+    max-width: 172px;
+    white-space: normal;
+    transform: scale(.82);
     transform-origin: center;
+    padding: 11px 13px;
+    gap: 9px;
   }
 
-  .fact-wrap-1 { top: 18%; right: 40%; }
-  .fact-wrap-2 { top: 22%; right: 4%; }
-  .fact-wrap-3 { top: 42%; right: 44%; }
-  .fact-wrap-4 { top: 55%; right: 10%; }
-  .fact-wrap-5 { top: 70%; right: 32%; }
+  .fact-title,
+  .fact-sub {
+    line-height: 1.35;
+  }
+
+  .fact-wrap-1 { top: 16%; right: 34%; }
+  .fact-wrap-2 { top: 21%; right: 0; }
+  .fact-wrap-3 { top: 40%; right: 38%; }
+  .fact-wrap-4 { top: 56%; right: 4%; }
+  .fact-wrap-5 { top: 72%; right: 28%; }
+
+  .fact-wrap-4 .fact-card {
+    max-width: 196px;
+  }
 
   .home-stats-wrap,
   .home-work-section,
