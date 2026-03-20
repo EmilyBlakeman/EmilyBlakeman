@@ -2870,7 +2870,9 @@ body.gallery-lightbox-open {
   margin-top: 24px;
 }
 #cs-aroundtown .aroundtown-gallery-lowfi {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  max-width: 100%;
+  justify-content: start;
 }
 #cs-aroundtown .aroundtown-gallery-hifi {
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -3170,6 +3172,15 @@ body.gallery-lightbox-open {
   max-width: 720px;
   margin: 26px auto 0;
 }
+#cs-alumnify .alumnify-annotation-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 24px;
+}
+#cs-alumnify .alumnify-annotation-image {
+  margin: 0;
+}
 #cs-alumnify .alumnify-workflow-carousel {
   position: relative;
   margin-top: 24px;
@@ -3233,7 +3244,8 @@ body.gallery-lightbox-open {
 }
 @media(max-width: 960px) {
   #cs-alumnify .alumnify-stage-grid,
-  #cs-alumnify .alumnify-stakeholder-grid {
+  #cs-alumnify .alumnify-stakeholder-grid,
+  #cs-alumnify .alumnify-annotation-grid {
     grid-template-columns: 1fr;
   }
   #cs-alumnify .alumnify-hero-panel-center {
