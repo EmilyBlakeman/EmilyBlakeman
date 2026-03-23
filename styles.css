@@ -2536,30 +2536,15 @@ body.gallery-lightbox-open {
     min-height: 168px;
   }
 
-  .stat-item:nth-child(1),
-  .stat-item:nth-child(2),
   .stat-item:nth-child(4) {
-    border-right: 1px solid var(--border);
+    grid-column: 1 / span 3;
+    border-top: 1px solid var(--border);
   }
 
-  .stat-item:nth-child(3),
   .stat-item:nth-child(5) {
+    grid-column: 4 / span 3;
+    border-top: 1px solid var(--border);
     border-right: none;
-  }
-
-  .stat-item:nth-child(4) {
-    grid-column: 2 / span 2;
-    border-top: 1px solid var(--border);
-  }
-
-  .stat-item:nth-child(5) {
-    grid-column: 4 / span 2;
-    border-top: 1px solid var(--border);
-  }
-
-  .stat-item:first-child,
-  .stat-item:nth-child(4) {
-    border-top: none;
   }
 
   .stat-label {
