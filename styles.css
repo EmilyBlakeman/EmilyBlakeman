@@ -3780,9 +3780,9 @@ body.gallery-lightbox-open {
   margin: 0;
   border-radius: 18px;
   overflow: hidden;
-  border: 1px solid rgba(230, 126, 34, .08);
-  background: #fff;
-  box-shadow: 0 16px 40px rgba(230, 126, 34, .08);
+  border: 0;
+  background: transparent;
+  box-shadow: none;
 }
 #cs-alumnify .alumnify-hero-panel img {
   width: 100%;
@@ -3902,6 +3902,7 @@ body.gallery-lightbox-open {
 }
 #cs-alumnify .alumnify-annotation-image {
   margin: 0;
+  border-radius: 8px;
 }
 #cs-alumnify .alumnify-workflow-carousel {
   position: relative;
