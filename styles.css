@@ -973,10 +973,57 @@ nav {
 .gallery-art-card {
   margin: 0;
   border-radius: var(--radius);
+  overflow: visible;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  perspective: 1200px;
+  position: relative;
+}
+.gallery-art-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: inherit;
+  transform-style: preserve-3d;
+  transition: transform .7s cubic-bezier(.22,1,.36,1);
+}
+.gallery-art-face {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   overflow: hidden;
   border: 1px solid var(--border);
   background: white;
   box-shadow: 0 10px 26px rgba(15, 23, 42, .08);
+}
+.gallery-art-card-front {
+  z-index: 2;
+  transform: rotateY(0deg) translateZ(1px);
+}
+.gallery-art-card-back {
+  transform: rotateY(180deg) translateZ(1px);
+  background: linear-gradient(160deg, rgba(30, 31, 36, .96), rgba(64, 67, 74, .95));
+  padding: 24px 22px;
+  text-align: left;
+  align-items: center;
+  border-color: rgba(255,255,255,.06);
+}
+.gallery-art-card-back p {
+  margin: 0;
+  color: white;
+  font-size: .84rem;
+  line-height: 1.65;
+  font-weight: 300;
+}
+@media (hover: hover) and (pointer: fine) {
+  .gallery-art-card:hover .gallery-art-card-inner {
+    transform: rotateY(180deg);
+  }
 }
 .gallery-art-img {
   width: 100%;
@@ -1819,6 +1866,11 @@ footer {
 
 
 .gallery-art-card {
+  border-radius: 12px;
+}
+.gallery-art-card,
+.gallery-art-card-inner,
+.gallery-art-face {
   border-radius: 12px;
 }
 .gallery-travel-grid .gallery-art-card {
