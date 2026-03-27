@@ -2871,7 +2871,7 @@ body.gallery-lightbox-open {
 #cs-genemod .cs-meta-row {
   justify-content: center;
 }
-#cs-genemod .cs-band > div {
+#cs-genemod .cs-band > div:not(.genemod-meta-row) {
   margin-top: 0 !important;
 }
 
@@ -2879,7 +2879,8 @@ body.gallery-lightbox-open {
 #cs-genemod .genemod-band {
   background:
     radial-gradient(circle at 50% 0%, rgba(47, 102, 214, .08), rgba(47, 102, 214, 0) 58%),
-    linear-gradient(180deg, rgba(246, 250, 255, .88) 0%, rgba(251, 253, 255, .34) 52%, rgba(255, 255, 255, 0) 100%);
+    linear-gradient(180deg, rgba(246, 250, 255, .88) 0%, rgba(251, 253, 255, .28) 42%, rgba(255, 255, 255, 0) 82%);
+  padding-bottom: 30px;
 }
 #cs-genemod .genemod-band-inner {
   margin-top: 12px !important;
@@ -2966,8 +2967,8 @@ body.gallery-lightbox-open {
 
 #cs-genemod .genemod-meta-row {
   max-width: var(--max-w);
-  margin: 8px auto 0;
-  padding: 0 var(--page-side) 18px;
+  margin: 36px auto 0;
+  padding: 0;
   justify-content: center;
 }
 #cs-genemod .genemod-device-laptop {
@@ -3047,7 +3048,9 @@ body.gallery-lightbox-open {
 
 
 #cs-genemod .genemod-meta-row {
-  margin: 0 auto 68px;
+  margin: 28px auto 24px !important;
+  padding: 0;
+  justify-content: center;
 }
 #cs-genemod .cs-step-content p + p {
   margin-top: 20px;
@@ -3307,9 +3310,9 @@ body.gallery-lightbox-open {
 #cs-inflerra .inflerra-band {
   background:
     radial-gradient(circle at 50% 0%, rgba(139, 76, 199, .07), rgba(139, 76, 199, 0) 68%),
-    linear-gradient(180deg, rgba(249, 246, 255, .82) 0%, rgba(252, 250, 255, .28) 58%, rgba(255, 255, 255, 0) 100%);
+    linear-gradient(180deg, rgba(249, 246, 255, .82) 0%, rgba(252, 250, 255, .24) 44%, rgba(255, 255, 255, 0) 82%);
   padding-top: 78px;
-  padding-bottom: 26px;
+  padding-bottom: 30px;
 }
 #cs-inflerra .inflerra-band-inner {
   margin-top: 12px !important;
@@ -3335,8 +3338,8 @@ body.gallery-lightbox-open {
 }
 #cs-inflerra .inflerra-meta-row {
   max-width: var(--max-w);
-  margin: 0 auto 64px;
-  padding: 0 var(--page-side);
+  margin: 28px auto 24px;
+  padding: 0;
 }
 #cs-inflerra .inflerra-hero-devices {
   max-width: var(--max-w);
@@ -3452,9 +3455,9 @@ body.gallery-lightbox-open {
 #cs-aroundtown .aroundtown-band {
   background:
     radial-gradient(circle at 50% 0%, rgba(74, 117, 228, .08), rgba(74, 117, 228, 0) 58%),
-    linear-gradient(180deg, rgba(246, 249, 255, .88) 0%, rgba(251, 253, 255, .34) 52%, rgba(255, 255, 255, 0) 100%);
+    linear-gradient(180deg, rgba(246, 249, 255, .88) 0%, rgba(251, 253, 255, .28) 42%, rgba(255, 255, 255, 0) 82%);
   padding-top: 78px;
-  padding-bottom: 26px;
+  padding-bottom: 30px;
 }
 #cs-aroundtown .aroundtown-band-inner {
   margin-top: 12px !important;
@@ -3478,8 +3481,8 @@ body.gallery-lightbox-open {
 }
 #cs-aroundtown .aroundtown-meta-row {
   max-width: var(--max-w);
-  margin: 0 auto 64px;
-  padding: 0 var(--page-side);
+  margin: 28px auto 24px;
+  padding: 0;
 }
 #cs-aroundtown .aroundtown-hero-gallery {
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -3787,14 +3790,14 @@ body.gallery-lightbox-open {
 #cs-alumnify .cs-band {
   background:
     radial-gradient(circle at 50% 0%, rgba(230, 126, 34, .08), rgba(230, 126, 34, 0) 58%),
-    linear-gradient(180deg, rgba(255, 248, 242, .88) 0%, rgba(255, 252, 248, .34) 52%, rgba(255, 255, 255, 0) 100%) !important;
+    linear-gradient(180deg, rgba(255, 248, 242, .88) 0%, rgba(255, 252, 248, .28) 42%, rgba(255, 255, 255, 0) 82%) !important;
 }
 #cs-alumnify .cs-band {
   text-align: center;
 }
 #cs-alumnify .alumnify-band {
   padding-top: 78px;
-  padding-bottom: 26px;
+  padding-bottom: 30px;
 }
 #cs-alumnify .alumnify-band-inner {
   margin-top: 12px !important;
@@ -3818,8 +3821,26 @@ body.gallery-lightbox-open {
 }
 #cs-alumnify .alumnify-meta-row {
   max-width: var(--max-w);
-  margin: 0 auto 64px;
-  padding: 0 var(--page-side);
+  margin: 28px auto 24px;
+  padding: 0;
+}
+
+#cs-genemod .cs-meta-pill,
+#cs-inflerra .cs-meta-pill,
+#cs-aroundtown .cs-meta-pill,
+#cs-alumnify .cs-meta-pill {
+  text-align: left;
+}
+
+#cs-genemod .cs-meta-pill-label,
+#cs-inflerra .cs-meta-pill-label,
+#cs-aroundtown .cs-meta-pill-label,
+#cs-alumnify .cs-meta-pill-label,
+#cs-genemod .cs-meta-pill-value,
+#cs-inflerra .cs-meta-pill-value,
+#cs-aroundtown .cs-meta-pill-value,
+#cs-alumnify .cs-meta-pill-value {
+  text-align: left;
 }
 #cs-alumnify .alumnify-hero-media {
   max-width: 760px;
